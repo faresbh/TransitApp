@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "074a037c50671305ec4d91c49fd18fb3"
+build_time: [528135648, 831357000]
+inputs:
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/IJProgressView/IJProgressView/IJProgressView/IJProgressView.swift": [528133554, 0]

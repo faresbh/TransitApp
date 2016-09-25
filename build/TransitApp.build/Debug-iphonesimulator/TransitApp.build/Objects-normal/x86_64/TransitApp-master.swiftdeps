@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "0b8290246d3aa261e06b7931a53b890e"
+build_time: [528136340, 809276000]
+inputs:
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/IJProgressView.swift": [528136117, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SplashViewController.swift": [528135502, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/AppDelegate.swift": [528129578, 0]
