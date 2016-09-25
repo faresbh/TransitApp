@@ -111,6 +111,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import CoreLocation;
 @import CoreGraphics;
 #endif
 
@@ -131,11 +133,31 @@ SWIFT_CLASS("_TtC10TransitApp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC10TransitApp15LocationManager")
+@interface LocationManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LocationManager * _Nonnull sharedInstance;)
++ (LocationManager * _Nonnull)sharedInstance;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (CLLocationCoordinate2D)getCurrentUserLocation;
+@end
+
+@class GMSMapView;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10TransitApp20SearchViewController")
+@interface SearchViewController : UIViewController
+@property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified mapView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MMMaterialDesignSpinner;
 @class UIColor;
 @class UIStoryboardSegue;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10TransitApp20SplashViewController")
 @interface SplashViewController : UIViewController

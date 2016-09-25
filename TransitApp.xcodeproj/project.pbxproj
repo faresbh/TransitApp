@@ -16,6 +16,9 @@
 		627799631D981D50005E703C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 627799621D981D50005E703C /* Podfile */; };
 		627799661D9832A3005E703C /* IJProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627799651D9832A3005E703C /* IJProgressView.swift */; };
 		627799681D985C71005E703C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 627799671D985C71005E703C /* data.json */; };
+		6277996C1D987F17005E703C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277996B1D987F17005E703C /* SearchViewController.swift */; };
+		6277996E1D98845B005E703C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277996D1D98845B005E703C /* Constants.swift */; };
+		627799701D988604005E703C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277996F1D988604005E703C /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		627799621D981D50005E703C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		627799651D9832A3005E703C /* IJProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IJProgressView.swift; sourceTree = "<group>"; };
 		627799671D985C71005E703C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		6277996B1D987F17005E703C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6277996D1D98845B005E703C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6277996F1D988604005E703C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D0E41A5DA213A5C00B312AA8 /* Pods-TransitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransitApp/Pods-TransitApp.release.xcconfig"; sourceTree = "<group>"; };
 		D734036E45E47F99FE9BDA80 /* Pods-TransitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransitApp/Pods-TransitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,11 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				627799601D9819C0005E703C /* Interfaces */,
-				6277995E1D981969005E703C /* Resources */,
 				6277995D1D98195F005E703C /* Views */,
 				6277995C1D981955005E703C /* Controllers */,
 				6277995B1D981943005E703C /* Models */,
 				627799641D983281005E703C /* Utils */,
+				6277995E1D981969005E703C /* Resources */,
 				6277995F1D981986005E703C /* Extra */,
 			);
 			path = TransitApp;
@@ -129,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				6277993D1D98192A005E703C /* SplashViewController.swift */,
+				6277996B1D987F17005E703C /* SearchViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -143,7 +150,9 @@
 		6277995E1D981969005E703C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				627799671D985C71005E703C /* data.json */,
 				627799421D98192A005E703C /* Assets.xcassets */,
+				6277996D1D98845B005E703C /* Constants.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -151,7 +160,6 @@
 		6277995F1D981986005E703C /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				627799671D985C71005E703C /* data.json */,
 				627799471D98192A005E703C /* Info.plist */,
 				6277993B1D98192A005E703C /* AppDelegate.swift */,
 				627799611D981BFC005E703C /* TransitApp-Bridging-Header.h */,
@@ -171,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				627799651D9832A3005E703C /* IJProgressView.swift */,
+				6277996F1D988604005E703C /* LocationManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -340,8 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6277996E1D98845B005E703C /* Constants.swift in Sources */,
 				627799661D9832A3005E703C /* IJProgressView.swift in Sources */,
+				627799701D988604005E703C /* LocationManager.swift in Sources */,
 				6277993E1D98192A005E703C /* SplashViewController.swift in Sources */,
+				6277996C1D987F17005E703C /* SearchViewController.swift in Sources */,
 				6277993C1D98192A005E703C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

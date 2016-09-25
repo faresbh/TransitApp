@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C10TransitApp20SplashViewController", ""]
 provides-dynamic-lookup:
-- "prepare"
-- "spinnerView"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "prepare"
 - "greenBarColor"
 - "navigateToPopularMovies"
+- "spinnerView"
 - "window"
 depends-top-level:
 - !private "-"
 - "SplashViewController"
-- !private "BooleanLiteralType"
-- !private "CGRect"
 - !private "UIScreen"
+- !private "CGRect"
 - "MMMaterialDesignSpinner"
+- "AssignmentPrecedence"
 - !private "Timer"
 - !private "StringLiteralType"
-- "UIColor"
-- "AssignmentPrecedence"
-- "UIViewController"
 - "UIStoryboardSegue"
+- "UIColor"
+- !private "BooleanLiteralType"
+- "UIViewController"
 - "UIWindow"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]

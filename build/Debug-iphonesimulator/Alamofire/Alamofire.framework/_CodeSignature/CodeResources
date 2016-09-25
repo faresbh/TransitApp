@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		rL0TbMPzlQrqu7SI+Mhk/ZLQWRA=
+		6a4w2vy8VTjk7ejskNgXJ0XW5gA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rL0TbMPzlQrqu7SI+Mhk/ZLQWRA=
+			6a4w2vy8VTjk7ejskNgXJ0XW5gA=
 			</data>
 			<key>hash2</key>
 			<data>
-			VmQzzpUM9JF+Bb5J0un1ASLYVwUscx6EZHgPGu8aNuA=
+			TqryR3hsSLQmIQjyFEbvSi29Q5lTQHYAbjZpiryZ8A4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -49,7 +49,7 @@ class SplashViewController: UIViewController {
     
     func navigateToPopularMovies()
     {
-        self.performSegue(withIdentifier: "from_splash_to_bitcoin", sender: nil)
+        self.performSegue(withIdentifier: "from_splash_to_search", sender: nil)
         //stop the spinner
         spinnerView.stopAnimating()
     }

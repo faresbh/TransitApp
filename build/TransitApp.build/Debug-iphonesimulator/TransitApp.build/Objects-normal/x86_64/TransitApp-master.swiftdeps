@@ -1,7 +1,10 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "0b8290246d3aa261e06b7931a53b890e"
-build_time: [528136340, 809276000]
+options: "039a9749531ded22e5040e7fb7145ca1"
+build_time: [528157658, 479575000]
 inputs:
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Constants.swift": [528157539, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/IJProgressView.swift": [528136117, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SplashViewController.swift": [528135502, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/AppDelegate.swift": [528129578, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/LocationManager.swift": [528157657, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SplashViewController.swift": [528155673, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SearchViewController.swift": [528157583, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/AppDelegate.swift": [528157186, 0]

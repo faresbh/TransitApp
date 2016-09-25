@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "20c379e7bbca5979efc681e3eb322f63"
-build_time: [528136323, 208013000]
+options: "9796c1cd4c0ef08f368b053fce627c12"
+build_time: [528156713, 924247000]
 inputs:
   "/Users/Fares/Documents/Projects/TransitApp/Pods/Alamofire/Source/AFError.swift": [528133560, 0]
   "/Users/Fares/Documents/Projects/TransitApp/Pods/Alamofire/Source/Alamofire.swift": [528133560, 0]

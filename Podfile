@@ -2,6 +2,7 @@ target "TransitApp" do
 
 pod 'Alamofire', '~> 4.0.0'
 pod 'MMMaterialDesignSpinner' , '~> 0.2.1'
+pod 'GoogleMaps'
 
 use_frameworks!
 

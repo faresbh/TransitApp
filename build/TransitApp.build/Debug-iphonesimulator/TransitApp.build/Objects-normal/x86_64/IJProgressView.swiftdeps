@@ -9,19 +9,19 @@ provides-member:
 - ["CSo7UIColor", "init"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "&"
-- "AssignmentPrecedence"
-- !private "CGRect"
-- "UIView"
-- "UInt32"
-- "IJProgressView"
-- "CGFloat"
-- "UIColor"
-- !private "BooleanLiteralType"
 - "UIActivityIndicatorView"
-- !private "CGPoint"
+- "CGFloat"
 - !private ">>"
+- "UIView"
+- "AssignmentPrecedence"
+- "UIColor"
+- !private "CGRect"
+- "UInt32"
 - !private "/"
+- "IJProgressView"
+- !private "&"
+- !private "BooleanLiteralType"
+- !private "CGPoint"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
