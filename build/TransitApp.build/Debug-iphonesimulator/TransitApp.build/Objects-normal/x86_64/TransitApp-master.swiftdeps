@@ -1,10 +1,16 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "039a9749531ded22e5040e7fb7145ca1"
-build_time: [528157658, 479575000]
+options: "776fa849430a3b289999fba3a39ddab6"
+build_time: [528237941, 64546000]
 inputs:
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Constants.swift": [528157539, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Data.swift": [528236619, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Segment.swift": [528232401, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/IJProgressView.swift": [528136117, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/LocationManager.swift": [528157657, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SplashViewController.swift": [528155673, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SearchViewController.swift": [528157583, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Stop.swift": [528232293, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SplashViewController.swift": [528237864, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SearchViewController.swift": [528237914, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Extensions.swift": [528234348, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Route.swift": [528234445, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/AppDelegate.swift": [528157186, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/DataParser.swift": [528237802, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/ProviderAttribute.swift": [528233523, 0]

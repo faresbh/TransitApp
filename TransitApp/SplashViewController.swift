@@ -16,6 +16,8 @@ class SplashViewController: UIViewController {
     var greenBarColor:UIColor!
     var window: UIWindow?
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,10 +36,26 @@ class SplashViewController: UIViewController {
         spinnerView.startAnimating()
         
         
-        // timer for 2 seconde and then navigate to popular movies screen
-        Timer.scheduledTimer(
-            timeInterval: 2, target: self, selector: #selector(SplashViewController.navigateToPopularMovies), userInfo: nil, repeats: false
-        )
+     
+        
+        
+        DataParser.sharedInstance.getRoutes(origin: "", destination: "", atTime: nil) {  [weak self] (routes, providers, error) in
+            
+            if error != nil{
+                print(error)
+                return
+            }
+            
+            Results.routes = routes
+            Results.providers = providers
+            
+            DispatchQueue.main.async {
+                self?.performSegue(withIdentifier: "from_splash_to_search", sender: nil)
+                self?.spinnerView.stopAnimating()
+            }
+          
+        }
+        
         
         
     }
@@ -49,14 +67,13 @@ class SplashViewController: UIViewController {
     
     func navigateToPopularMovies()
     {
-        self.performSegue(withIdentifier: "from_splash_to_search", sender: nil)
-        //stop the spinner
-        spinnerView.stopAnimating()
+      
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
+       // print(routes)
+
     }
     
 }

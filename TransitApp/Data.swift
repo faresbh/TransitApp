@@ -15,3 +15,11 @@ struct Constants {
     static let destLatitude = 52.509071
     static let destLongitude = 13.377977
 }
+
+
+struct Results {
+    
+    static  var routes:[Route]?
+    static  var providers:[ProviderAttribute]?
+ 
+}

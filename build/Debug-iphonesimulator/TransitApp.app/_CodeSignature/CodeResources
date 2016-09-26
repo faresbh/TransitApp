@@ -6,13 +6,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		TACKMXJfAHR62d5XRvLF0xpFBRw=
+		kcSPNlGB/b7DCET1ej0qQJ8lDB8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x/bmLH/4VjmWFWrzEOXTf3Lgzf4=
+			0lpgltBoPnZgXLncQm3jS4y7N5A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -30,7 +30,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HGe3tVdQ2BY6qy1zwanwsaKXpII=
+			J/hb65NqSV5AtOX76SzcwES2j7c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a8BM8E+T5yS/2NYBWT1CDvM0aGM=
+			80EJgzDcOg8zC/QBdovnKPtY8mM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -48,14 +48,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EZwGf/KfXkbCrNu9lDAM2IT166s=
+			hz689d7skrImvT+oLg9V38CANLw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		7TA+/Yh7fV9uZnqW0prpB0z6aBU=
+		BGWWaHJ8EsfzS6atEn7orgeYQFw=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -71,11 +71,23 @@
 		</data>
 		<key>Frameworks/MMMaterialDesignSpinner.framework/MMMaterialDesignSpinner</key>
 		<data>
-		y9s5IxxNC07JHKHvvrMqgqS4Bcs=
+		IyZ4selwpf7H0z/1x4dQIdjTUEE=
 		</data>
 		<key>Frameworks/MMMaterialDesignSpinner.framework/_CodeSignature/CodeResources</key>
 		<data>
 		mutGLlJ7RKuM/yLmqmbmKzW4xhc=
+		</data>
+		<key>Frameworks/MaterialKit.framework/Info.plist</key>
+		<data>
+		YPvDhPzXczHHBq7f8ETMv+LcGI4=
+		</data>
+		<key>Frameworks/MaterialKit.framework/MaterialKit</key>
+		<data>
+		hKVmgj7cfOIMsRwU6K3Saicd9ns=
+		</data>
+		<key>Frameworks/MaterialKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		Dnq2Tei8NjZFkggHXbsyZCNPbg0=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -818,7 +830,7 @@
 		</data>
 		<key>Podfile</key>
 		<data>
-		wY/ATgrP16LxMFZjSZLuSL8mazc=
+		rKmsCfMbS6A8opmj6SENuRTwh3Y=
 		</data>
 		<key>data.json</key>
 		<data>
@@ -835,22 +847,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TACKMXJfAHR62d5XRvLF0xpFBRw=
+			kcSPNlGB/b7DCET1ej0qQJ8lDB8=
 			</data>
 			<key>hash2</key>
 			<data>
-			AcEgFfx8TY4jGB5yuE8XAKO1GZd9mr56XP/BBsCwWMA=
+			3RPF+XI/evaNgP4zsp+t5lSsb3MF7k9u5Iw1EjMTLxg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x/bmLH/4VjmWFWrzEOXTf3Lgzf4=
+			0lpgltBoPnZgXLncQm3jS4y7N5A=
 			</data>
 			<key>hash2</key>
 			<data>
-			uPp8CW/t3+dJc0Eg9ADQqXIRaxHp/81GqT6iTgNRJBM=
+			L8WAShd+Wzrwp4ohPeDuSvc+UChxtH3J2tlWikGT6YE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -872,11 +884,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HGe3tVdQ2BY6qy1zwanwsaKXpII=
+			J/hb65NqSV5AtOX76SzcwES2j7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			/nYuXDgDiUPrVg+puJhLl/a8o/Qxg7ujq4Ul275XGVk=
+			/+IbLJN/dLWlv5M4oZErpUBH4wXUT+MPyBfX3AG0Wlc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -885,11 +897,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a8BM8E+T5yS/2NYBWT1CDvM0aGM=
+			80EJgzDcOg8zC/QBdovnKPtY8mM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FkHjBz1Ym5zszyUcNDjLldHxyWxdM5BD1HXT/AtltGQ=
+			uGHOyGZM83IYucF67X77GcHPdRyDv8H1sWe/1S9OUh8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -898,11 +910,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EZwGf/KfXkbCrNu9lDAM2IT166s=
+			hz689d7skrImvT+oLg9V38CANLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			VOxMcepEW8A2wGoA/JnG2Zbs/5ir1ymWYvRoug/ah/Q=
+			5BuOeceGB1ibULgqP0wUoywutY9EK4AFPLqjQfFvgHM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -911,11 +923,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7TA+/Yh7fV9uZnqW0prpB0z6aBU=
+			BGWWaHJ8EsfzS6atEn7orgeYQFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+KKNaPNe9LpnYEpH1dJQN3wSwx79q+QOIGV3rkDs6gA=
+			0kJc7/KGwAG6OF159AOl8eqZbA9MbaX51oEUILu5V0o=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
@@ -955,11 +967,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y9s5IxxNC07JHKHvvrMqgqS4Bcs=
+			IyZ4selwpf7H0z/1x4dQIdjTUEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			7+hvOb+PsOBl5tV+ye0fbOQ110klvt17ODjO5fsu8Vw=
+			2YEfGHK0h0RFyxy5yQGvaJBFLeedR60+xVW8VObFh0I=
 			</data>
 		</dict>
 		<key>Frameworks/MMMaterialDesignSpinner.framework/_CodeSignature/CodeResources</key>
@@ -971,6 +983,39 @@
 			<key>hash2</key>
 			<data>
 			09uD20nadgMJmOGMfsu+uzvUt/vsks481+Ll0ZRvY9c=
+			</data>
+		</dict>
+		<key>Frameworks/MaterialKit.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YPvDhPzXczHHBq7f8ETMv+LcGI4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ko8AE+R1M5yyq5P6ng/JENkFlj4GV5q6KK1IuUCtW8U=
+			</data>
+		</dict>
+		<key>Frameworks/MaterialKit.framework/MaterialKit</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hKVmgj7cfOIMsRwU6K3Saicd9ns=
+			</data>
+			<key>hash2</key>
+			<data>
+			kFWfGncCjNcuLuyWfmrID3huPzYylGtfhLsynR1+Nko=
+			</data>
+		</dict>
+		<key>Frameworks/MaterialKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dnq2Tei8NjZFkggHXbsyZCNPbg0=
+			</data>
+			<key>hash2</key>
+			<data>
+			YNUov61wehsq8P1HN9mZdBMl9ooGAsOb4+gN+9VycaM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -2482,11 +2527,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wY/ATgrP16LxMFZjSZLuSL8mazc=
+			rKmsCfMbS6A8opmj6SENuRTwh3Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			dvR0Gt/XYHpdF6zDm6dWvVoyh5td6H0ZVc8zwQb4QBs=
+			yzT4iMuAanrRZj74MpdSgF0rkLEEwe1BdEBqbDT5lNw=
 			</data>
 		</dict>
 		<key>data.json</key>

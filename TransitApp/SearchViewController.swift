@@ -12,8 +12,13 @@ import GoogleMaps
 class SearchViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
+
     
+    @IBOutlet weak var destinationTextField: UITextField!
+    @IBOutlet weak var departTextField: UITextField!
+    @IBOutlet weak var dateTravel: UITextField!
     
+    @IBOutlet weak var pinLocationImage: UIImageView!
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -27,12 +32,11 @@ class SearchViewController: UIViewController {
         originMarker.title = "My Location"
         originMarker.map = self.mapView
         
+        pinLocationImage.userInteractionEnabled = true
+        pinLocationImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SettingsViewController.changeProfilPhoto)))
         
-        let destinationMarker = GMSMarker()
-        destinationMarker.icon = GMSMarker.markerImage(with: UIColor.red)
-        destinationMarker.position = CLLocationCoordinate2D(latitude: Constants.destLatitude, longitude: Constants.destLongitude)
-        destinationMarker.title = "Destination"
-        destinationMarker.map = self.mapView
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +44,11 @@ class SearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @IBAction func navigateToResults(_ sender: AnyObject) {
+        
+        
+    }
     /*
     // MARK: - Navigation
 

@@ -14,7 +14,7 @@ class LocationManager: NSObject {
     static let sharedInstance = LocationManager()
     private override init() {}
     
-    //MockData
+    // To be changed dynamicly
     func getCurrentUserLocation()->CLLocationCoordinate2D{
         return CLLocationCoordinate2D(latitude: Constants.destLatitude, longitude: Constants.destLongitude )
     }

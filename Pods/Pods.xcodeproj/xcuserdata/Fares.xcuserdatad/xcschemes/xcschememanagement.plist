@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MaterialKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TransitApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>73850773DC05DB0F801C716B2A9E95F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A006C8B45E64F6B36E89F9FF370645E</key>
+		<key>C26FDC5894993EFB73030D1E6B01FB1F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

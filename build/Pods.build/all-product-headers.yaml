@@ -63,6 +63,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MaterialKit/MaterialKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MaterialKit-Swift.h",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MaterialKit/MaterialKit.framework/Headers/MaterialKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MaterialKit-umbrella.h",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/MaterialKit/MaterialKit-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MaterialKit/MaterialKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/MaterialKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Pods_TransitApp.framework/Headers",
       'contents': [
         {

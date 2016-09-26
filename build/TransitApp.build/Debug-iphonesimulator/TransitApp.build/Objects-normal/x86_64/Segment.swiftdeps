@@ -1,0 +1,646 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Segment"
+provides-nominal:
+- "C10TransitApp7Segment"
+- "OC10TransitApp7Segment4Mode"
+provides-member:
+- ["C10TransitApp7Segment", ""]
+- ["OC10TransitApp7Segment4Mode", ""]
+provides-dynamic-lookup:
+- "iconUrl"
+- "iconImage"
+- "getArrivalTime"
+- "name"
+- "segmentDescription"
+- "isMoveSegment"
+- "polyline"
+- "getStartTime"
+depends-top-level:
+- "AnyObject"
+- "Stop"
+- "NSObject"
+- "Int"
+- "NSDate"
+- !private "BooleanLiteralType"
+- "StringLiteralType"
+- !private ">"
+- "=="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "~="
+- "CLLocationCoordinate2D"
+- "Segment"
+- "String"
+- "UIImage"
+- "Bool"
+depends-member:
+- !private ["Ps9AnyObject", "Mode"]
+- !private ["Ps9AnyObject", "Stop"]
+- !private ["Ps9AnyObject", "allObjects"]
+- !private ["Ps9AnyObject", "datetime"]
+- ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "getArrivalTime"]
+- ["Ps9AnyObject", "getDestinationPoint"]
+- ["Ps9AnyObject", "getStartPoint"]
+- ["Ps9AnyObject", "getStartTime"]
+- ["Ps9AnyObject", "iconImage"]
+- ["Ps9AnyObject", "iconUrl"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isMoveSegment"]
+- !private ["Ps9AnyObject", "location"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "numStops"]
+- ["Ps9AnyObject", "polyline"]
+- ["Ps9AnyObject", "segmentDescription"]
+- ["Ps9AnyObject", "stops"]
+- ["Ps9AnyObject", "travelMode"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "deinit"]
+- !private ["Sa", "first"]
+- !private ["Sa", "last"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "first"]
+- !private ["Ps23BidirectionalCollection", "last"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "first"]
+- !private ["Ps22BidirectionalIndexable", "last"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Mode"]
+- !private ["Ps7CVarArg", "Stop"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "datetime"]
+- !private ["Ps7CVarArg", "first"]
+- ["Ps7CVarArg", "getArrivalTime"]
+- ["Ps7CVarArg", "getDestinationPoint"]
+- ["Ps7CVarArg", "getStartPoint"]
+- ["Ps7CVarArg", "getStartTime"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "iconImage"]
+- ["Ps7CVarArg", "iconUrl"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "isMoveSegment"]
+- !private ["Ps7CVarArg", "last"]
+- !private ["Ps7CVarArg", "location"]
+- ["Ps7CVarArg", "name"]
+- ["Ps7CVarArg", "numStops"]
+- ["Ps7CVarArg", "polyline"]
+- ["Ps7CVarArg", "segmentDescription"]
+- ["Ps7CVarArg", "stops"]
+- !private ["Ps7CVarArg", "subscript"]
+- ["Ps7CVarArg", "travelMode"]
+- ["Ps7CVarArg", ""]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "first"]
+- !private ["Ps10Collection", "last"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "hashValue"]
+- ["Ps10Comparable", "init"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "Mode"]
+- !private ["Ps28CustomDebugStringConvertible", "Stop"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "datetime"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- ["Ps28CustomDebugStringConvertible", "getArrivalTime"]
+- ["Ps28CustomDebugStringConvertible", "getDestinationPoint"]
+- ["Ps28CustomDebugStringConvertible", "getStartPoint"]
+- ["Ps28CustomDebugStringConvertible", "getStartTime"]
+- ["Ps28CustomDebugStringConvertible", "iconImage"]
+- ["Ps28CustomDebugStringConvertible", "iconUrl"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isMoveSegment"]
+- !private ["Ps28CustomDebugStringConvertible", "last"]
+- !private ["Ps28CustomDebugStringConvertible", "location"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "numStops"]
+- ["Ps28CustomDebugStringConvertible", "polyline"]
+- ["Ps28CustomDebugStringConvertible", "segmentDescription"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- ["Ps28CustomDebugStringConvertible", "stops"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "travelMode"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "first"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "last"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Mode"]
+- !private ["Ps23CustomStringConvertible", "Stop"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "datetime"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- ["Ps23CustomStringConvertible", "getArrivalTime"]
+- ["Ps23CustomStringConvertible", "getDestinationPoint"]
+- ["Ps23CustomStringConvertible", "getStartPoint"]
+- ["Ps23CustomStringConvertible", "getStartTime"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "iconImage"]
+- ["Ps23CustomStringConvertible", "iconUrl"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isMoveSegment"]
+- !private ["Ps23CustomStringConvertible", "last"]
+- !private ["Ps23CustomStringConvertible", "location"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "numStops"]
+- ["Ps23CustomStringConvertible", "polyline"]
+- ["Ps23CustomStringConvertible", "segmentDescription"]
+- ["Ps23CustomStringConvertible", "stops"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "travelMode"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "Mode"]
+- ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Stop"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "datetime"]
+- ["Ps9Equatable", "getArrivalTime"]
+- ["Ps9Equatable", "getDestinationPoint"]
+- ["Ps9Equatable", "getStartPoint"]
+- ["Ps9Equatable", "getStartTime"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "iconImage"]
+- ["Ps9Equatable", "iconUrl"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isMoveSegment"]
+- !private ["Ps9Equatable", "location"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "numStops"]
+- ["Ps9Equatable", "polyline"]
+- ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", "segmentDescription"]
+- ["Ps9Equatable", "stops"]
+- ["Ps9Equatable", "travelMode"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "first"]
+- !private ["Ps25ExpressibleByArrayLiteral", "last"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Mode"]
+- ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "Stop"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "datetime"]
+- ["Ps8Hashable", "getArrivalTime"]
+- ["Ps8Hashable", "getDestinationPoint"]
+- ["Ps8Hashable", "getStartPoint"]
+- ["Ps8Hashable", "getStartTime"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "iconImage"]
+- ["Ps8Hashable", "iconUrl"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isMoveSegment"]
+- !private ["Ps8Hashable", "location"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "numStops"]
+- ["Ps8Hashable", "polyline"]
+- ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", "segmentDescription"]
+- ["Ps8Hashable", "stops"]
+- ["Ps8Hashable", "travelMode"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "first"]
+- !private ["Ps9Indexable", "last"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "first"]
+- !private ["Ps13IndexableBase", "last"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["Ps10MirrorPath", "init"]
+- ["OC10TransitApp7Segment4Mode", "RawValue"]
+- ["OC10TransitApp7Segment4Mode", "_toAnyHashable"]
+- ["OC10TransitApp7Segment4Mode", "bus"]
+- ["OC10TransitApp7Segment4Mode", "change"]
+- ["OC10TransitApp7Segment4Mode", "cycling"]
+- ["OC10TransitApp7Segment4Mode", "deinit"]
+- ["OC10TransitApp7Segment4Mode", "driving"]
+- ["OC10TransitApp7Segment4Mode", "hashValue"]
+- ["OC10TransitApp7Segment4Mode", "init"]
+- ["OC10TransitApp7Segment4Mode", "parking"]
+- ["OC10TransitApp7Segment4Mode", "rawValue"]
+- ["OC10TransitApp7Segment4Mode", "setup"]
+- ["OC10TransitApp7Segment4Mode", "subway"]
+- ["OC10TransitApp7Segment4Mode", "walking"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "first"]
+- !private ["Ps17MutableCollection", "last"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "first"]
+- !private ["Ps16MutableIndexable", "last"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CLLocationCoordinate2D"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "Mode"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "Stop"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "datetime"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "getArrivalTime"]
+- ["CSo8NSObject", "getDestinationPoint"]
+- ["CSo8NSObject", "getStartPoint"]
+- ["CSo8NSObject", "getStartTime"]
+- ["CSo8NSObject", "iconImage"]
+- ["CSo8NSObject", "iconUrl"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isMoveSegment"]
+- !private ["CSo8NSObject", "location"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "numStops"]
+- ["CSo8NSObject", "polyline"]
+- ["CSo8NSObject", "segmentDescription"]
+- ["CSo8NSObject", "stops"]
+- ["CSo8NSObject", "travelMode"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Mode"]
+- !private ["PSo16NSObjectProtocol", "Stop"]
+- !private ["PSo16NSObjectProtocol", "datetime"]
+- ["PSo16NSObjectProtocol", "getArrivalTime"]
+- ["PSo16NSObjectProtocol", "getDestinationPoint"]
+- ["PSo16NSObjectProtocol", "getStartPoint"]
+- ["PSo16NSObjectProtocol", "getStartTime"]
+- ["PSo16NSObjectProtocol", "iconImage"]
+- ["PSo16NSObjectProtocol", "iconUrl"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isMoveSegment"]
+- !private ["PSo16NSObjectProtocol", "location"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "numStops"]
+- ["PSo16NSObjectProtocol", "polyline"]
+- ["PSo16NSObjectProtocol", "segmentDescription"]
+- ["PSo16NSObjectProtocol", "stops"]
+- ["PSo16NSObjectProtocol", "travelMode"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Os5Never", "deinit"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "first"]
+- !private ["Ps22RandomAccessCollection", "last"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "first"]
+- !private ["Ps21RandomAccessIndexable", "last"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "first"]
+- !private ["Ps26RangeReplaceableCollection", "last"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "first"]
+- !private ["Ps25RangeReplaceableIndexable", "last"]
+- ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", ""]
+- ["C10TransitApp7Segment", "AnyObject"]
+- ["C10TransitApp7Segment", "Bool"]
+- ["C10TransitApp7Segment", "CLLocationCoordinate2D"]
+- ["C10TransitApp7Segment", "Int"]
+- ["C10TransitApp7Segment", "Mode"]
+- ["C10TransitApp7Segment", "NSDate"]
+- ["C10TransitApp7Segment", "Stop"]
+- ["C10TransitApp7Segment", "String"]
+- ["C10TransitApp7Segment", "UIImage"]
+- ["C10TransitApp7Segment", "deinit"]
+- ["C10TransitApp7Segment", "getArrivalTime"]
+- ["C10TransitApp7Segment", "getDestinationPoint"]
+- ["C10TransitApp7Segment", "getStartPoint"]
+- ["C10TransitApp7Segment", "getStartTime"]
+- ["C10TransitApp7Segment", "iconImage"]
+- ["C10TransitApp7Segment", "iconUrl"]
+- ["C10TransitApp7Segment", "init"]
+- ["C10TransitApp7Segment", "isMoveSegment"]
+- ["C10TransitApp7Segment", "name"]
+- !private ["C10TransitApp7Segment", "numStops"]
+- ["C10TransitApp7Segment", "polyline"]
+- ["C10TransitApp7Segment", "segmentDescription"]
+- !private ["C10TransitApp7Segment", "stops"]
+- ["C10TransitApp7Segment", "travelMode"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "first"]
+- !private ["Ps8Sequence", "last"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- !private ["C10TransitApp4Stop", "datetime"]
+- ["C10TransitApp4Stop", "deinit"]
+- !private ["C10TransitApp4Stop", "init"]
+- !private ["C10TransitApp4Stop", "location"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["Su", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "first"]
+- !private ["Ps14_ArrayProtocol", "last"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
+- !private ["Ps24_DestructorSafeContainer", "last"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Mode"]
+- ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "Stop"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "datetime"]
+- ["Ps9_Hashable", "getArrivalTime"]
+- ["Ps9_Hashable", "getDestinationPoint"]
+- ["Ps9_Hashable", "getStartPoint"]
+- ["Ps9_Hashable", "getStartTime"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "iconImage"]
+- ["Ps9_Hashable", "iconUrl"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "isMoveSegment"]
+- !private ["Ps9_Hashable", "location"]
+- ["Ps9_Hashable", "name"]
+- ["Ps9_Hashable", "numStops"]
+- ["Ps9_Hashable", "polyline"]
+- ["Ps9_Hashable", "rawValue"]
+- ["Ps9_Hashable", "segmentDescription"]
+- ["Ps9_Hashable", "stops"]
+- ["Ps9_Hashable", "travelMode"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "last"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "Ps7CVarArg"
+- !private "Vs11ClosedRange"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "OC10TransitApp7Segment4Mode"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Os5Never"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- "Ps16RawRepresentable"
+- "C10TransitApp7Segment"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Vs5Slice"
+- "Vs12StaticString"
+- "C10TransitApp4Stop"
+- !private "Ps10Strideable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Su"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+- !private "allObjects"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/TransitApp/TransitApp-Bridging-Header.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Headers/MMMaterialDesignSpinner.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Headers/MMMaterialDesignSpinner-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
+interface-hash: "5ecc46cd589bae7faa27a22763590bf5"

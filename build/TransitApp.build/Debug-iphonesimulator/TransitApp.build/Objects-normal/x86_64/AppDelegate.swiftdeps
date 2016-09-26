@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C10TransitApp11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillTerminate"
-- "applicationDidEnterBackground"
-- "window"
-- "applicationWillResignActive"
 - "application"
 - "applicationDidBecomeActive"
+- "applicationWillResignActive"
+- "window"
 - "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
 depends-top-level:
-- !private "GMSServices"
-- "UIWindow"
-- "AppDelegate"
-- "Bool"
 - "UIApplication"
-- "UIApplicationDelegate"
-- !private "Constants"
-- "UIResponder"
 - !private "BooleanLiteralType"
+- !private "GMSServices"
+- !private "Constants"
+- "UIWindow"
+- "Bool"
 - "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
+- "UIResponder"
+- "UIApplicationDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "Constants"]
 - !private ["Ps9AnyObject", "GMSServices"]

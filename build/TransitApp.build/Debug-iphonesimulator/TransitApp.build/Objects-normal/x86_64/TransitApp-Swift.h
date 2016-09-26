@@ -113,6 +113,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import ObjectiveC;
 @import CoreLocation;
+@import Foundation;
 @import CoreGraphics;
 #endif
 
@@ -133,6 +134,20 @@ SWIFT_CLASS("_TtC10TransitApp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDate;
+@class Route;
+@class ProviderAttribute;
+@class NSError;
+
+SWIFT_CLASS("_TtC10TransitApp10DataParser")
+@interface DataParser : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DataParser * _Nonnull sharedInstance;)
++ (DataParser * _Nonnull)sharedInstance;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (void)getRoutesWithOrigin:(NSString * _Nonnull)origin destination:(NSString * _Nonnull)destination atTime:(NSDate * _Nullable)time completionHandler:(void (^ _Nonnull)(NSArray<Route *> * _Nullable, NSArray<ProviderAttribute *> * _Nullable, NSError * _Nullable))completionHandler;
+- (void)consultServerForOrigin:(NSString * _Nonnull)origin destination:(NSString * _Nonnull)destination time:(NSDate * _Nullable)time sucess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))sucess fail:(void (^ _Nonnull)(NSError * _Nullable))fail;
+@end
+
 
 SWIFT_CLASS("_TtC10TransitApp15LocationManager")
 @interface LocationManager : NSObject
@@ -142,17 +157,67 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LocationMana
 - (CLLocationCoordinate2D)getCurrentUserLocation;
 @end
 
+
+SWIFT_CLASS("_TtC10TransitApp17ProviderAttribute")
+@interface ProviderAttribute : NSObject
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name dataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class Segment;
+@class NSDictionary;
+
+SWIFT_CLASS("_TtC10TransitApp5Route")
+@interface Route : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull provider;
+@property (nonatomic, copy) NSArray<Segment *> * _Nonnull segments;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable properties;
+@property (nonatomic, readonly, copy) NSString * _Nullable currency;
+- (nonnull instancetype)initWithDataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSString * _Nullable)getPrice;
+- (Segment * _Nullable)getMoveSegmentWithId:(NSInteger)id;
+- (NSInteger)numberOfMoveSegments;
+- (NSDictionary * _Nullable)getProperties;
+- (NSTimeInterval)getTravelTime;
+- (NSDate * _Nullable)getStartTime;
+- (NSDate * _Nullable)getArrivelTime;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
 @class GMSMapView;
+@class UITextField;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10TransitApp20SearchViewController")
 @interface SearchViewController : UIViewController
 @property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified mapView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified destinationTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified departTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified dateTravel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pinLocationImage;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)navigateToResults:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImage;
+
+SWIFT_CLASS("_TtC10TransitApp7Segment")
+@interface Segment : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+@property (nonatomic, readonly, copy) NSString * _Nullable segmentDescription;
+@property (nonatomic, strong) UIImage * _Nullable iconImage;
+@property (nonatomic, readonly, copy) NSString * _Nonnull iconUrl;
+@property (nonatomic, readonly, copy) NSString * _Nullable polyline;
+- (nonnull instancetype)initWithDataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isMoveSegment;
+- (NSDate * _Nullable)getStartTime;
+- (NSDate * _Nullable)getArrivalTime;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
 @class MMMaterialDesignSpinner;
@@ -170,6 +235,14 @@ SWIFT_CLASS("_TtC10TransitApp20SplashViewController")
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10TransitApp4Stop")
+@interface Stop : NSObject
+@property (nonatomic, readonly, strong) NSDate * _Nullable datetime;
+- (nonnull instancetype)initWithDataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
 

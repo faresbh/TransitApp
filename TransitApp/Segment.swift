@@ -7,38 +7,72 @@
 //
 
 import Foundation
+import UIKit
+import CoreLocation
 
-
-class Segement {
+public class Segment: NSObject {
     
-    var name : String!
-    var num_stops : Int!
-    var stops : [Stop]!
-    var travel_mode : String!
-    var description : String!
-    var color : String!
-    var icon_url : String!
-    var polyline : String!
-    
-    
-    
-    init(name: String, num_stops: Int, travel_mode: String, description: color, icon_url : String , polyline : String )
-        
-    {
-        self.name=name
-        self.num_stops=num_stops
-        self.travel_mode = travel_mode
-        self.description=description
-        self.color=color
-        self.icon_url=icon_url
-        self.polyline=polyline
-        
+   
+    public enum Mode:String{
+        case walking, subway, bus, driving, cycling, setup, parking, change
     }
     
-    init()
-    {
+    let name:String?
+    private let numStops:Int
+    let travelMode:Mode
+    let segmentDescription: String?
+    
+    var iconImage:UIImage?
+    let iconUrl:String
+    let polyline:String?
+    
+    private var stops:[Stop] = []
+    
+    init(dataDictionary:[String: AnyObject]){
+        self.name = dataDictionary["name"] as? String
+        self.numStops = dataDictionary["num_stops"] as! Int
         
+        let modeString = dataDictionary["travel_mode"] as! String
+        self.travelMode = Mode(rawValue: modeString)!
         
+        self.segmentDescription = dataDictionary["description"] as? String
+        
+        self.iconImage = nil
+        
+        self.iconUrl = dataDictionary["icon_url"] as! String
+        self.polyline = dataDictionary["polyline"] as? String
+        
+        if let stopDictionary = dataDictionary["stops"]{
+            for stop in stopDictionary.allObjects{
+                let stopPoint = Stop(dataDictionary: stop as! [String : AnyObject])
+                self.stops.append(stopPoint)
+            }
+        }
+    }
+    
+    func isInMoveSegment()->Bool{
+        
+        // Segment not in move depending on "Mode"
+        if self.travelMode.hashValue > 4{
+            return false
+        }
+        return true
+    }
+    
+    func getStartTime()->NSDate?{
+        return self.stops.first?.datetime
+    }
+    
+    func getArrivalTime()->NSDate?{
+        return self.stops.last?.datetime
+    }
+    
+    func getStartPoint()->CLLocationCoordinate2D?{
+        return self.stops.first?.location
+    }
+    
+    func getDestinationPoint()->CLLocationCoordinate2D?{
+        return self.stops.last?.location
     }
     
 }

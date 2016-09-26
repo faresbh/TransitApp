@@ -7,33 +7,26 @@
 //
 
 import Foundation
+import CoreLocation
 
-
-class Stop {
-
-var lat : Float
-var lng : Float
-var datetime : String
-var name : String
-var properties : String
-
-
-
-    init(lat: Float, lng: String, datetime: String, name: String, properties : String )
+public class Stop: NSObject {
+    
+    let location:CLLocationCoordinate2D?
+    let datetime:NSDate?
+    private let name:String?
+    
+    init(dataDictionary:[String: AnyObject]){
         
-    {
-        self.lat=lat
-        self.lng=laslngtName
-        self.datetime = datetime
-        self.name=name
-        self.properties=properties
-           
+        let latitude = dataDictionary["lat"] as? CLLocationDegrees
+        let longitude = dataDictionary["lng"] as? CLLocationDegrees
+        
+        self.location = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
+        
+        let timeString = dataDictionary["datetime"] as? String
+        self.datetime = timeString!.toDateTime()
+        
+        let stopString = dataDictionary["name"] as? String
+        self.name = stopString
     }
-
-    init()
-    {
-    
-    
-    }
-
 }
+

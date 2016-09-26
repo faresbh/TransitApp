@@ -9,10 +9,10 @@ provides-dynamic-lookup:
 - "getCurrentUserLocation"
 - "sharedInstance"
 depends-top-level:
-- !private "Constants"
-- "LocationManager"
 - "CLLocationCoordinate2D"
 - "NSObject"
+- !private "Constants"
+- "LocationManager"
 depends-member:
 - !private ["Ps9AnyObject", "CLLocationCoordinate2D"]
 - !private ["Ps9AnyObject", "Constants"]
