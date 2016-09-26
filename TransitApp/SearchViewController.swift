@@ -8,12 +8,15 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
-class SearchViewController: UIViewController {
-
-    @IBOutlet weak var mapView: GMSMapView!
+class SearchViewController: UIViewController , CLLocationManagerDelegate {
 
     
+    let locationManager : CLLocationManager! = CLLocationManager()
+    
+    @IBOutlet weak var mapView: GMSMapView!
+
     @IBOutlet weak var destinationTextField: UITextField!
     @IBOutlet weak var departTextField: UITextField!
     @IBOutlet weak var dateTravel: UITextField!
@@ -22,28 +25,45 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        self.mapView.camera = GMSCameraPosition.camera(withLatitude: LocationManager.sharedInstance.getCurrentUserLocation().latitude, longitude: LocationManager.sharedInstance.getCurrentUserLocation().longitude, zoom: 12)
-        
-        
+
         let originMarker = GMSMarker()
         originMarker.icon = GMSMarker.markerImage(with: UIColor.blue)
-        originMarker.position = LocationManager.sharedInstance.getCurrentUserLocation()
-        originMarker.title = "My Location"
+       // originMarker.position = LocationManager.sharedInstance.getCurrentUserLocation()
+        originMarker.title = "Destination"
         originMarker.map = self.mapView
-        
-        pinLocationImage.userInteractionEnabled = true
-        pinLocationImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SettingsViewController.changeProfilPhoto)))
-        
-
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+        pinLocationImage.isUserInteractionEnabled = true
+        pinLocationImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SearchViewController.getUserLocation)))
+
+        
+    }
+
+    func getUserLocation()
+    {
+
+        // set location manager delegate
+        self.locationManager.delegate = self
+        
+        // set location accuracy
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        // request location access permision from user.
+        self.locationManager.requestWhenInUseAuthorization()
+
+        
+        if pinLocationImage.image == UIImage(named: "location-pin")
+        {
+            pinLocationImage.image = UIImage(named: "location-pin-blue")
+         
+            self.mapView.isMyLocationEnabled = true
+                   }
+        else
+        {
+             self.mapView.isMyLocationEnabled = false
+              pinLocationImage.image = UIImage(named: "pin-location")
+        }
+        
+    }
     
     @IBAction func navigateToResults(_ sender: AnyObject) {
         

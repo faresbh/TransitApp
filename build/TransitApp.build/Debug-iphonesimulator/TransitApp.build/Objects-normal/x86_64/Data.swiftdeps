@@ -10,11 +10,11 @@ provides-member:
 - ["V10TransitApp7Results", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Route"
 - "StringLiteralType"
-- "Results"
+- "Route"
 - "Constants"
 - "ProviderAttribute"
+- "Results"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps7CVarArg", "init"]

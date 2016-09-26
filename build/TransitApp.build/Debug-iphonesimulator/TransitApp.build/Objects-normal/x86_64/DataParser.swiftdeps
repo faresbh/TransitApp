@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C10TransitApp10DataParser", ""]
 provides-dynamic-lookup:
-- "sharedInstance"
 - "consultServerFor"
+- "sharedInstance"
 - "getRoutes"
 depends-top-level:
-- !private "Bundle"
-- "Array"
-- "ProviderAttribute"
-- !private "NSData"
-- "StringLiteralType"
-- "NSDate"
 - "NSObject"
-- !private "Data"
-- !private "NSDictionary"
-- !private "CastingPrecedence"
-- "DataParser"
-- "NSError"
-- "AnyObject"
-- !private "JSONSerialization"
-- "Route"
+- "Array"
 - "String"
+- !private "Data"
+- !private "CastingPrecedence"
+- !private "Bundle"
+- "ProviderAttribute"
+- "StringLiteralType"
+- !private "JSONSerialization"
+- !private "NSData"
+- "NSDate"
+- "DataParser"
+- !private "NSDictionary"
+- "NSError"
+- "Route"
+- "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - ["Ps9AnyObject", "DataParser"]
@@ -417,9 +417,9 @@ depends-nominal:
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
-- !private "object"
-- !private "allKeys"
 - !private "allObjects"
+- !private "allKeys"
+- !private "object"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/Fares/Documents/Projects/TransitApp/TransitApp/TransitApp-Bridging-Header.h"

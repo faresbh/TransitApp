@@ -6,9 +6,9 @@ provides-member:
 - ["SS", "toDateTime"]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
 - !private "StringLiteralType"
 - "NSDate"
-- "String"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "DateFormatter"

@@ -112,8 +112,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import ObjectiveC;
-@import CoreLocation;
 @import Foundation;
+@import CoreLocation;
 @import CoreGraphics;
 #endif
 
@@ -149,15 +149,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DataParser *
 @end
 
 
-SWIFT_CLASS("_TtC10TransitApp15LocationManager")
-@interface LocationManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LocationManager * _Nonnull sharedInstance;)
-+ (LocationManager * _Nonnull)sharedInstance;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-- (CLLocationCoordinate2D)getCurrentUserLocation;
-@end
-
-
 SWIFT_CLASS("_TtC10TransitApp17ProviderAttribute")
 @interface ProviderAttribute : NSObject
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name dataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
@@ -184,6 +175,7 @@ SWIFT_CLASS("_TtC10TransitApp5Route")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
+@class CLLocationManager;
 @class GMSMapView;
 @class UITextField;
 @class UIImageView;
@@ -191,14 +183,15 @@ SWIFT_CLASS("_TtC10TransitApp5Route")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10TransitApp20SearchViewController")
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController <CLLocationManagerDelegate>
+@property (nonatomic, readonly, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified mapView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified destinationTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified departTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified dateTravel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pinLocationImage;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)getUserLocation;
 - (IBAction)navigateToResults:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -214,7 +207,7 @@ SWIFT_CLASS("_TtC10TransitApp7Segment")
 @property (nonatomic, readonly, copy) NSString * _Nonnull iconUrl;
 @property (nonatomic, readonly, copy) NSString * _Nullable polyline;
 - (nonnull instancetype)initWithDataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)isMoveSegment;
+- (BOOL)isInMoveSegment;
 - (NSDate * _Nullable)getStartTime;
 - (NSDate * _Nullable)getArrivalTime;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

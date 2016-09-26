@@ -8,46 +8,46 @@ provides-member:
 - ["C10TransitApp5Route", ""]
 - ["OC10TransitApp5Route4Type", ""]
 provides-dynamic-lookup:
+- "getArrivelTime"
+- "currency"
+- "properties"
+- "getMoveSegment"
+- "getStartTime"
 - "segments"
 - "numberOfMoveSegments"
-- "getProperties"
-- "getMoveSegment"
-- "getArrivelTime"
-- "properties"
-- "getStartTime"
-- "currency"
-- "provider"
 - "getTravelTime"
 - "getPrice"
+- "getProperties"
+- "provider"
 depends-top-level:
-- !private "remainder"
-- "Route"
-- !private "<"
-- "Int"
-- !private "Date"
-- "TimeInterval"
-- !private "NSMutableDictionary"
-- "Double"
-- "AnyObject"
-- "String"
-- !private ">="
-- !private "+"
-- "StringLiteralType"
-- "NSDate"
-- !private "&&"
-- !private "UnicodeScalarType"
-- "NSDictionary"
-- !private "~="
-- !private "/"
-- "CLLocationCoordinate2D"
-- "CastingPrecedence"
-- "Segment"
-- "=="
-- "AssignmentPrecedence"
-- !private "Bool"
-- "NSObject"
 - !private "floor"
+- !private "UnicodeScalarType"
+- !private "remainder"
+- "NSObject"
+- "StringLiteralType"
+- "Segment"
+- !private "/"
 - !private "+="
+- "Route"
+- "TimeInterval"
+- "String"
+- !private "+"
+- !private "Date"
+- "AnyObject"
+- !private ">="
+- !private "&&"
+- "Double"
+- "NSDictionary"
+- !private "Bool"
+- "Int"
+- "NSDate"
+- !private "~="
+- !private "<"
+- !private "NSMutableDictionary"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "=="
+- "CLLocationCoordinate2D"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSMutableDictionary"]
@@ -70,7 +70,7 @@ depends-member:
 - ["Ps9AnyObject", "getStartTime"]
 - ["Ps9AnyObject", "getTravelTime"]
 - ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "isMoveSegment"]
+- !private ["Ps9AnyObject", "isInMoveSegment"]
 - ["Ps9AnyObject", "numberOfMoveSegments"]
 - ["Ps9AnyObject", "properties"]
 - ["Ps9AnyObject", "provider"]
@@ -162,7 +162,7 @@ depends-member:
 - ["Ps7CVarArg", "getTravelTime"]
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "isMoveSegment"]
+- !private ["Ps7CVarArg", "isInMoveSegment"]
 - !private ["Ps7CVarArg", "last"]
 - ["Ps7CVarArg", "numberOfMoveSegments"]
 - ["Ps7CVarArg", "properties"]
@@ -224,7 +224,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "getStartTime"]
 - ["Ps28CustomDebugStringConvertible", "getTravelTime"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "isMoveSegment"]
+- !private ["Ps28CustomDebugStringConvertible", "isInMoveSegment"]
 - !private ["Ps28CustomDebugStringConvertible", "last"]
 - ["Ps28CustomDebugStringConvertible", "numberOfMoveSegments"]
 - ["Ps28CustomDebugStringConvertible", "properties"]
@@ -300,7 +300,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "getTravelTime"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "isMoveSegment"]
+- !private ["Ps23CustomStringConvertible", "isInMoveSegment"]
 - !private ["Ps23CustomStringConvertible", "last"]
 - ["Ps23CustomStringConvertible", "numberOfMoveSegments"]
 - ["Ps23CustomStringConvertible", "properties"]
@@ -356,7 +356,7 @@ depends-member:
 - ["Ps9Equatable", "getTravelTime"]
 - ["Ps9Equatable", "hashValue"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "isMoveSegment"]
+- !private ["Ps9Equatable", "isInMoveSegment"]
 - ["Ps9Equatable", "numberOfMoveSegments"]
 - ["Ps9Equatable", "properties"]
 - ["Ps9Equatable", "provider"]
@@ -430,7 +430,7 @@ depends-member:
 - ["Ps8Hashable", "getTravelTime"]
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "isMoveSegment"]
+- !private ["Ps8Hashable", "isInMoveSegment"]
 - ["Ps8Hashable", "numberOfMoveSegments"]
 - ["Ps8Hashable", "properties"]
 - ["Ps8Hashable", "provider"]
@@ -576,7 +576,7 @@ depends-member:
 - ["CSo8NSObject", "getStartTime"]
 - ["CSo8NSObject", "getTravelTime"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "isMoveSegment"]
+- !private ["CSo8NSObject", "isInMoveSegment"]
 - ["CSo8NSObject", "numberOfMoveSegments"]
 - ["CSo8NSObject", "properties"]
 - ["CSo8NSObject", "provider"]
@@ -606,7 +606,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "getStartTime"]
 - ["PSo16NSObjectProtocol", "getTravelTime"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "isMoveSegment"]
+- !private ["PSo16NSObjectProtocol", "isInMoveSegment"]
 - ["PSo16NSObjectProtocol", "numberOfMoveSegments"]
 - ["PSo16NSObjectProtocol", "properties"]
 - ["PSo16NSObjectProtocol", "provider"]
@@ -726,7 +726,7 @@ depends-member:
 - !private ["C10TransitApp7Segment", "getStartPoint"]
 - !private ["C10TransitApp7Segment", "getStartTime"]
 - !private ["C10TransitApp7Segment", "init"]
-- !private ["C10TransitApp7Segment", "isMoveSegment"]
+- !private ["C10TransitApp7Segment", "isInMoveSegment"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "IndexDistance"]
@@ -860,7 +860,7 @@ depends-member:
 - ["Ps9_Hashable", "getTravelTime"]
 - ["Ps9_Hashable", "hashValue"]
 - ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "isMoveSegment"]
+- !private ["Ps9_Hashable", "isInMoveSegment"]
 - ["Ps9_Hashable", "numberOfMoveSegments"]
 - ["Ps9_Hashable", "properties"]
 - ["Ps9_Hashable", "provider"]
@@ -1086,4 +1086,4 @@ depends-external:
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
-interface-hash: "2acf6c1fbd09e5878b1a55283cbe7332"
+interface-hash: "92faf9c2bccafa290892f4aab592ed0d"

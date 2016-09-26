@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 - "datetime"
 depends-top-level:
-- !private "StringLiteralType"
-- "String"
-- "NSDate"
 - "CLLocationCoordinate2D"
-- !private "CLLocationDegrees"
-- "NSObject"
 - "Stop"
 - "AssignmentPrecedence"
-- "AnyObject"
+- "NSObject"
+- "NSDate"
 - "CastingPrecedence"
+- !private "StringLiteralType"
+- !private "CLLocationDegrees"
+- "AnyObject"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "CLLocationCoordinate2D"]
 - ["Ps9AnyObject", "datetime"]

@@ -8,32 +8,32 @@ provides-member:
 - ["C10TransitApp7Segment", ""]
 - ["OC10TransitApp7Segment4Mode", ""]
 provides-dynamic-lookup:
-- "iconUrl"
-- "iconImage"
-- "getArrivalTime"
 - "name"
 - "segmentDescription"
-- "isMoveSegment"
+- "isInMoveSegment"
 - "polyline"
+- "iconImage"
 - "getStartTime"
+- "iconUrl"
+- "getArrivalTime"
 depends-top-level:
-- "AnyObject"
-- "Stop"
-- "NSObject"
-- "Int"
-- "NSDate"
-- !private "BooleanLiteralType"
-- "StringLiteralType"
-- !private ">"
-- "=="
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "~="
-- "CLLocationCoordinate2D"
-- "Segment"
 - "String"
+- "NSDate"
+- "Segment"
+- !private "~="
+- !private ">"
+- "NSObject"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "=="
+- "Int"
 - "UIImage"
+- "StringLiteralType"
+- "CLLocationCoordinate2D"
 - "Bool"
+- "AnyObject"
+- !private "BooleanLiteralType"
+- "Stop"
 depends-member:
 - !private ["Ps9AnyObject", "Mode"]
 - !private ["Ps9AnyObject", "Stop"]
@@ -47,7 +47,7 @@ depends-member:
 - ["Ps9AnyObject", "iconImage"]
 - ["Ps9AnyObject", "iconUrl"]
 - ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "isMoveSegment"]
+- ["Ps9AnyObject", "isInMoveSegment"]
 - !private ["Ps9AnyObject", "location"]
 - ["Ps9AnyObject", "name"]
 - ["Ps9AnyObject", "numStops"]
@@ -92,7 +92,7 @@ depends-member:
 - ["Ps7CVarArg", "iconImage"]
 - ["Ps7CVarArg", "iconUrl"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "isMoveSegment"]
+- ["Ps7CVarArg", "isInMoveSegment"]
 - !private ["Ps7CVarArg", "last"]
 - !private ["Ps7CVarArg", "location"]
 - ["Ps7CVarArg", "name"]
@@ -132,7 +132,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "iconImage"]
 - ["Ps28CustomDebugStringConvertible", "iconUrl"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "isMoveSegment"]
+- ["Ps28CustomDebugStringConvertible", "isInMoveSegment"]
 - !private ["Ps28CustomDebugStringConvertible", "last"]
 - !private ["Ps28CustomDebugStringConvertible", "location"]
 - ["Ps28CustomDebugStringConvertible", "name"]
@@ -177,7 +177,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "iconImage"]
 - ["Ps23CustomStringConvertible", "iconUrl"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "isMoveSegment"]
+- ["Ps23CustomStringConvertible", "isInMoveSegment"]
 - !private ["Ps23CustomStringConvertible", "last"]
 - !private ["Ps23CustomStringConvertible", "location"]
 - ["Ps23CustomStringConvertible", "name"]
@@ -206,7 +206,7 @@ depends-member:
 - ["Ps9Equatable", "iconImage"]
 - ["Ps9Equatable", "iconUrl"]
 - ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "isMoveSegment"]
+- ["Ps9Equatable", "isInMoveSegment"]
 - !private ["Ps9Equatable", "location"]
 - ["Ps9Equatable", "name"]
 - ["Ps9Equatable", "numStops"]
@@ -245,7 +245,7 @@ depends-member:
 - ["Ps8Hashable", "iconImage"]
 - ["Ps8Hashable", "iconUrl"]
 - ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "isMoveSegment"]
+- ["Ps8Hashable", "isInMoveSegment"]
 - !private ["Ps8Hashable", "location"]
 - ["Ps8Hashable", "name"]
 - ["Ps8Hashable", "numStops"]
@@ -327,7 +327,7 @@ depends-member:
 - ["CSo8NSObject", "iconImage"]
 - ["CSo8NSObject", "iconUrl"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "isMoveSegment"]
+- ["CSo8NSObject", "isInMoveSegment"]
 - !private ["CSo8NSObject", "location"]
 - ["CSo8NSObject", "name"]
 - ["CSo8NSObject", "numStops"]
@@ -346,7 +346,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "iconImage"]
 - ["PSo16NSObjectProtocol", "iconUrl"]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "isMoveSegment"]
+- ["PSo16NSObjectProtocol", "isInMoveSegment"]
 - !private ["PSo16NSObjectProtocol", "location"]
 - ["PSo16NSObjectProtocol", "name"]
 - ["PSo16NSObjectProtocol", "numStops"]
@@ -404,7 +404,7 @@ depends-member:
 - ["C10TransitApp7Segment", "iconImage"]
 - ["C10TransitApp7Segment", "iconUrl"]
 - ["C10TransitApp7Segment", "init"]
-- ["C10TransitApp7Segment", "isMoveSegment"]
+- ["C10TransitApp7Segment", "isInMoveSegment"]
 - ["C10TransitApp7Segment", "name"]
 - !private ["C10TransitApp7Segment", "numStops"]
 - ["C10TransitApp7Segment", "polyline"]
@@ -469,7 +469,7 @@ depends-member:
 - ["Ps9_Hashable", "iconImage"]
 - ["Ps9_Hashable", "iconUrl"]
 - ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "isMoveSegment"]
+- ["Ps9_Hashable", "isInMoveSegment"]
 - !private ["Ps9_Hashable", "location"]
 - ["Ps9_Hashable", "name"]
 - ["Ps9_Hashable", "numStops"]
@@ -643,4 +643,4 @@ depends-external:
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
-interface-hash: "5ecc46cd589bae7faa27a22763590bf5"
+interface-hash: "689b9ab5c7662e4d01669fdcea182665"

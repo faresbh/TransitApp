@@ -7,15 +7,16 @@ provides-member:
 - ["C10TransitApp17ProviderAttribute", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- !private "StringLiteralType"
 - "NSURL"
-- "AnyObject"
-- "ProviderAttribute"
+- "String"
 - "NSObject"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
+- "ProviderAttribute"
+- !private "StringLiteralType"
+- "AnyObject"
 depends-member:
+- !private ["Ps9AnyObject", "NSURL"]
 - ["Ps9AnyObject", "disclaimer"]
 - ["Ps9AnyObject", "displayName"]
 - ["Ps9AnyObject", "init"]
@@ -25,6 +26,7 @@ depends-member:
 - ["Ps9AnyObject", "providerIconUrl"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "NSURL"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - ["Ps7CVarArg", "disclaimer"]
 - ["Ps7CVarArg", "displayName"]
@@ -42,6 +44,7 @@ depends-member:
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - ["Ps28CustomDebugStringConvertible", "disclaimer"]
 - ["Ps28CustomDebugStringConvertible", "displayName"]
@@ -50,14 +53,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "iosItunesUrl"]
 - ["Ps28CustomDebugStringConvertible", "name"]
 - ["Ps28CustomDebugStringConvertible", "providerIconUrl"]
+- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - ["Ps23CustomStringConvertible", "disclaimer"]
 - ["Ps23CustomStringConvertible", "displayName"]
@@ -72,6 +78,7 @@ depends-member:
 - !private ["Vs10Dictionary", "SubSequence"]
 - ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "NSURL"]
 - ["Ps9Equatable", "disclaimer"]
 - ["Ps9Equatable", "displayName"]
 - ["Ps9Equatable", "init"]
@@ -84,9 +91,11 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NSURL"]
 - ["Ps8Hashable", "disclaimer"]
 - ["Ps8Hashable", "displayName"]
 - ["Ps8Hashable", "init"]
@@ -124,6 +133,7 @@ depends-member:
 - ["CSo8NSObject", "name"]
 - ["CSo8NSObject", "providerIconUrl"]
 - ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
 - ["PSo16NSObjectProtocol", "disclaimer"]
 - ["PSo16NSObjectProtocol", "displayName"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -134,8 +144,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
 - ["Os5Never", "deinit"]
 - ["Sq", "deinit"]
+- ["Sq", "some"]
 - ["C10TransitApp17ProviderAttribute", "AnyObject"]
 - ["C10TransitApp17ProviderAttribute", "NSURL"]
 - ["C10TransitApp17ProviderAttribute", "String"]
@@ -169,6 +181,7 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "NSURL"]
 - ["Ps9_Hashable", "disclaimer"]
 - ["Ps9_Hashable", "displayName"]
 - ["Ps9_Hashable", "init"]
@@ -188,12 +201,13 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Vs10Dictionary"
 - "Ps9Equatable"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -211,6 +225,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "CSo5NSURL"
 - "Os5Never"
 - "Sq"
 - "C10TransitApp17ProviderAttribute"
