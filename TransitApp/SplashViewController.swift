@@ -8,6 +8,7 @@
 
 import UIKit
 import MMMaterialDesignSpinner
+import Polyline
 
 class SplashViewController: UIViewController {
     
@@ -50,6 +51,7 @@ class SplashViewController: UIViewController {
             Results.providers = providers
             
             DispatchQueue.main.async {
+                sleep(1)
                 self?.performSegue(withIdentifier: "from_splash_to_search", sender: nil)
                 self?.spinnerView.stopAnimating()
             }

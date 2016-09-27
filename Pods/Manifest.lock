@@ -7,29 +7,39 @@ PODS:
     - GoogleMaps/Base (= 2.1.0)
   - MaterialKit (0.4)
   - MMMaterialDesignSpinner (0.2.3)
+  - Polyline (4.0.0)
+  - PopupContainer (0.0.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0.0)
   - GoogleMaps
   - MaterialKit (from `https://github.com/faresbh/MaterialKit`, branch `swift3`)
   - MMMaterialDesignSpinner (~> 0.2.1)
+  - Polyline (~> 4.0)
+  - PopupContainer (from `https://github.com/faresbh/PopupContainer`, branch `swift3`)
 
 EXTERNAL SOURCES:
   MaterialKit:
     :branch: swift3
     :git: https://github.com/faresbh/MaterialKit
+  PopupContainer:
+    :branch: swift3
+    :git: https://github.com/faresbh/PopupContainer
 
 CHECKOUT OPTIONS:
   MaterialKit:
     :commit: 45bc7791f7e0583a94ced7d4cfc852fddc7800ca
     :git: https://github.com/faresbh/MaterialKit
+  PopupContainer:
+    :commit: 807802b2aba942ec854ca7c66484a677521cd315
+    :git: https://github.com/faresbh/PopupContainer
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   GoogleMaps: 06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c
   MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
   MMMaterialDesignSpinner: 55c80b454f7928d0ed789cc3c456fa06bd6a2f16
+  Polyline: c6de7430bf6ff0bfff1f087343597b83b38fdb69
+  PopupContainer: b5f670688de1e6070ba63da0217315b734920737
 
-PODFILE CHECKSUM: aca9ac09f31b4ba03ca299a3e9210db914f08776
-
-COCOAPODS: 1.0.1
+COCOAPODS: 0.39.0

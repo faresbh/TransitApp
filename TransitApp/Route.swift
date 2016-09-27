@@ -88,7 +88,8 @@ public class Route: NSObject {
         }
         
         let elementProperties:NSMutableDictionary = NSMutableDictionary()
-        //Taxi Special case
+        
+        
         if self.type == .taxi{
             for item in self.properties!["companies"]!.allObjects{
                 let key = (item as AnyObject)["name"] as! String
@@ -96,7 +97,10 @@ public class Route: NSObject {
                 
                 elementProperties[key] = value!
             }
-        }else{
+            
+        }
+        else
+        {
             for item in self.properties!{
                 let key = item.0.replacingOccurrences(of: "_", with: " ").capitalized
                 if let value = item.1 as? String{
