@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import MMMaterialDesignSpinner
+
 import Polyline
 
 class SplashViewController: UIViewController {
     
     
-    var spinnerView : MMMaterialDesignSpinner!
+  //  var spinnerView : MMMaterialDesignSpinner!
     var greenBarColor:UIColor!
     var window: UIWindow?
     
@@ -22,19 +22,19 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //setting the spinner
-        let screenSize: CGRect = UIScreen.main.bounds
-        
-        spinnerView = MMMaterialDesignSpinner(frame: CGRect(x:self.view.center.x-20,y:screenSize.height-100
-            , width: 40,height: 40))
-        spinnerView.lineWidth = 3
-        
-        spinnerView.tintColor = UIColor.gray
-        // Add it as a subview
-        self.view.addSubview(spinnerView)
-        
-        // animate the spinner
-        spinnerView.startAnimating()
+//        //setting the spinner
+//        let screenSize: CGRect = UIScreen.main.bounds
+//        
+//        spinnerView = MMMaterialDesignSpinner(frame: CGRect(x:self.view.center.x-20,y:screenSize.height-100
+//            , width: 40,height: 40))
+//        spinnerView.lineWidth = 3
+//        
+//        spinnerView.tintColor = UIColor.gray
+//        // Add it as a subview
+//        self.view.addSubview(spinnerView)
+//        
+//        // animate the spinner
+//        spinnerView.startAnimating()
         
         
      
@@ -51,9 +51,9 @@ class SplashViewController: UIViewController {
             Results.providers = providers
             
             DispatchQueue.main.async {
-                sleep(1)
+
                 self?.performSegue(withIdentifier: "from_splash_to_search", sender: nil)
-                self?.spinnerView.stopAnimating()
+                //self?.spinnerView.stopAnimating()
             }
           
         }

@@ -18,11 +18,10 @@ public class Segment: NSObject {
     }
     
     let name:String?
-    private let numStops:Int
+    let numStops:Int
     let travelMode:Mode
     let segmentDescription: String?
-    
-    var iconImage:UIImage?
+
     let iconUrl:String
     let polyline:String?
     
@@ -34,11 +33,7 @@ public class Segment: NSObject {
         
         let modeString = dataDictionary["travel_mode"] as! String
         self.travelMode = Mode(rawValue: modeString)!
-        
         self.segmentDescription = dataDictionary["description"] as? String
-        
-        self.iconImage = nil
-        
         self.iconUrl = dataDictionary["icon_url"] as! String
         self.polyline = dataDictionary["polyline"] as? String
         
@@ -52,7 +47,7 @@ public class Segment: NSObject {
     
     func isInMoveSegment()->Bool{
         
-        // Segment not in move depending on "Mode"
+    
         if self.travelMode.hashValue > 4{
             return false
         }

@@ -21,13 +21,13 @@ class DataParser: NSObject {
                 var routeArray:[Route] = []
                 var providerArray:[ProviderAttribute] = []
                 
-                /* Create Routes*/
+              
                 for routeData in routesDictionary.allObjects{
                     let singleRoute = Route(dataDictionary: routeData as! [String : AnyObject])
                     routeArray.append(singleRoute)
                 }
                 
-                /* Create Providers*/
+               
                 for providerKey in providersDictionary.allKeys{
                     if let providerName = providerKey as? String,let providerData = (providersDictionary.object(forKey: providerName) as?[String : AnyObject]){
                         let singleProvider = ProviderAttribute(name: providerName, dataDictionary: providerData)
@@ -44,10 +44,10 @@ class DataParser: NSObject {
         }
     }
     
-    //MockData
+   
     func consultServerFor(origin:String = "", destination:String = "", time:NSDate? = nil, sucess:@escaping ([String: AnyObject])->(), fail:(NSError?)->()){
         self.retrieveDataFromFile(sucess: { (jsonData) in
-            /* Parse JSON*/
+           
             do{
                 if let responseDictionary = try JSONSerialization.jsonObject(with: jsonData as Data, options: []) as? NSDictionary{
                     sucess(responseDictionary as! [String : AnyObject])

@@ -1,0 +1,17 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "8f3a33e14f198fd84b4b3c78805a0204"
+build_time: [528325917, 997567000]
+inputs:
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/CAShapeLayer+SVG.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/CrossPlatform.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/Dictionary+KeyForValue.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/NSObject+Extensions.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/Stack.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/String+Subscript.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/String+SVG.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/String+ToHex.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/SVGParser.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/SVGView.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/UIBezierPath+SVG.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/UIColor+Extensions.swift": [528325899, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/SwiftSVG/SwiftSVG/UIView+SVG.swift": [528325899, 0]

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "70124084c1f180e1c4c8e0ecd54c83a0"
+build_time: [528330324, 666713000]
+inputs:
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/PopupContainer/Pod/Classes/PopupContainer.swift": [528329632, 0]

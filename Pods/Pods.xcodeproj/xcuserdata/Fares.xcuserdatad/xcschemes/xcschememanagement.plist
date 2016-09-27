@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MMMaterialDesignSpinner.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>MaterialKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,10 +14,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Polyline.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PopupContainer-PopupContainer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PopupContainer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>68DD50BE9CDFC880B2A369AB468E633A</key>
+		<key>038577BFE1F63E9112CED23DDDD7D980</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0996F3E1638EE1B1030D2611B5DFE057</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<key>8B3556F9455B5FF444CA120089E55BC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C26FDC5894993EFB73030D1E6B01FB1F</key>
+		<key>9222B9C4BD47A82076F60F535E273A6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

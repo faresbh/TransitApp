@@ -48,9 +48,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "&"
-- !private "/"
-- "Int"
 - "CGFloat"
+- "Int"
+- !private "/"
 - "UIColor"
 - !private ">>"
 depends-member:

@@ -1,0 +1,373 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SegmentsTableViewCell"
+provides-nominal:
+- "C10TransitApp21SegmentsTableViewCell"
+provides-member:
+- ["C10TransitApp21SegmentsTableViewCell", ""]
+provides-dynamic-lookup:
+- "travelModeSegment"
+- "imageWebViewSegment"
+- "nameSegment"
+- "awakeFromNib"
+- "setSelected"
+- "numStopsSegment"
+- "descriptionSegment"
+depends-top-level:
+- "UILabel"
+- "UIWebView"
+- "UITableViewCell"
+- "Bool"
+- "SegmentsTableViewCell"
+depends-member:
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "descriptionSegment"]
+- ["Ps9AnyObject", "imageWebViewSegment"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "nameSegment"]
+- ["Ps9AnyObject", "numStopsSegment"]
+- ["Ps9AnyObject", "setSelected"]
+- ["Ps9AnyObject", "travelModeSegment"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "awakeFromNib"]
+- ["PSo15CALayerDelegate", "descriptionSegment"]
+- ["PSo15CALayerDelegate", "imageWebViewSegment"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "nameSegment"]
+- ["PSo15CALayerDelegate", "numStopsSegment"]
+- ["PSo15CALayerDelegate", "setSelected"]
+- ["PSo15CALayerDelegate", "travelModeSegment"]
+- ["PSo15CALayerDelegate", ""]
+- ["Ps7CVarArg", "awakeFromNib"]
+- ["Ps7CVarArg", "descriptionSegment"]
+- ["Ps7CVarArg", "imageWebViewSegment"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "nameSegment"]
+- ["Ps7CVarArg", "numStopsSegment"]
+- ["Ps7CVarArg", "setSelected"]
+- ["Ps7CVarArg", "travelModeSegment"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "descriptionSegment"]
+- ["Ps28CustomDebugStringConvertible", "imageWebViewSegment"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "nameSegment"]
+- ["Ps28CustomDebugStringConvertible", "numStopsSegment"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- ["Ps28CustomDebugStringConvertible", "travelModeSegment"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "descriptionSegment"]
+- ["Ps23CustomStringConvertible", "imageWebViewSegment"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "nameSegment"]
+- ["Ps23CustomStringConvertible", "numStopsSegment"]
+- ["Ps23CustomStringConvertible", "setSelected"]
+- ["Ps23CustomStringConvertible", "travelModeSegment"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "descriptionSegment"]
+- ["Ps9Equatable", "imageWebViewSegment"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "nameSegment"]
+- ["Ps9Equatable", "numStopsSegment"]
+- ["Ps9Equatable", "setSelected"]
+- ["Ps9Equatable", "travelModeSegment"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "descriptionSegment"]
+- ["Ps8Hashable", "imageWebViewSegment"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "nameSegment"]
+- ["Ps8Hashable", "numStopsSegment"]
+- ["Ps8Hashable", "setSelected"]
+- ["Ps8Hashable", "travelModeSegment"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "descriptionSegment"]
+- ["PSo8NSCoding", "imageWebViewSegment"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "nameSegment"]
+- ["PSo8NSCoding", "numStopsSegment"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", "travelModeSegment"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIWebView"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "descriptionSegment"]
+- ["CSo8NSObject", "imageWebViewSegment"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "nameSegment"]
+- ["CSo8NSObject", "numStopsSegment"]
+- ["CSo8NSObject", "setSelected"]
+- ["CSo8NSObject", "travelModeSegment"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "descriptionSegment"]
+- ["PSo16NSObjectProtocol", "imageWebViewSegment"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "nameSegment"]
+- ["PSo16NSObjectProtocol", "numStopsSegment"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", "travelModeSegment"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["C10TransitApp21SegmentsTableViewCell", "Bool"]
+- ["C10TransitApp21SegmentsTableViewCell", "UILabel"]
+- ["C10TransitApp21SegmentsTableViewCell", "UIWebView"]
+- ["C10TransitApp21SegmentsTableViewCell", "awakeFromNib"]
+- ["C10TransitApp21SegmentsTableViewCell", "deinit"]
+- ["C10TransitApp21SegmentsTableViewCell", "descriptionSegment"]
+- ["C10TransitApp21SegmentsTableViewCell", "imageWebViewSegment"]
+- ["C10TransitApp21SegmentsTableViewCell", "init"]
+- ["C10TransitApp21SegmentsTableViewCell", "nameSegment"]
+- ["C10TransitApp21SegmentsTableViewCell", "numStopsSegment"]
+- ["C10TransitApp21SegmentsTableViewCell", "setSelected"]
+- ["C10TransitApp21SegmentsTableViewCell", "travelModeSegment"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "descriptionSegment"]
+- ["PSo29UIAccessibilityIdentification", "imageWebViewSegment"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "nameSegment"]
+- ["PSo29UIAccessibilityIdentification", "numStopsSegment"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", "travelModeSegment"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "descriptionSegment"]
+- ["PSo12UIAppearance", "imageWebViewSegment"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "nameSegment"]
+- ["PSo12UIAppearance", "numStopsSegment"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", "travelModeSegment"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "descriptionSegment"]
+- ["PSo21UIAppearanceContainer", "imageWebViewSegment"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "nameSegment"]
+- ["PSo21UIAppearanceContainer", "numStopsSegment"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", "travelModeSegment"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "descriptionSegment"]
+- ["PSo17UICoordinateSpace", "imageWebViewSegment"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "nameSegment"]
+- ["PSo17UICoordinateSpace", "numStopsSegment"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", "travelModeSegment"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "descriptionSegment"]
+- ["PSo13UIDynamicItem", "imageWebViewSegment"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "nameSegment"]
+- ["PSo13UIDynamicItem", "numStopsSegment"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", "travelModeSegment"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "descriptionSegment"]
+- ["PSo18UIFocusEnvironment", "imageWebViewSegment"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "nameSegment"]
+- ["PSo18UIFocusEnvironment", "numStopsSegment"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", "travelModeSegment"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo11UIFocusItem", "awakeFromNib"]
+- ["PSo11UIFocusItem", "descriptionSegment"]
+- ["PSo11UIFocusItem", "imageWebViewSegment"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "nameSegment"]
+- ["PSo11UIFocusItem", "numStopsSegment"]
+- ["PSo11UIFocusItem", "setSelected"]
+- ["PSo11UIFocusItem", "travelModeSegment"]
+- ["PSo11UIFocusItem", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "descriptionSegment"]
+- ["PSo27UIGestureRecognizerDelegate", "imageWebViewSegment"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "nameSegment"]
+- ["PSo27UIGestureRecognizerDelegate", "numStopsSegment"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", "travelModeSegment"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIWebView"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "descriptionSegment"]
+- ["CSo11UIResponder", "imageWebViewSegment"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "nameSegment"]
+- ["CSo11UIResponder", "numStopsSegment"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo11UIResponder", "travelModeSegment"]
+- ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
+- ["PSo30UIResponderStandardEditActions", "descriptionSegment"]
+- ["PSo30UIResponderStandardEditActions", "imageWebViewSegment"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "nameSegment"]
+- ["PSo30UIResponderStandardEditActions", "numStopsSegment"]
+- ["PSo30UIResponderStandardEditActions", "setSelected"]
+- ["PSo30UIResponderStandardEditActions", "travelModeSegment"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "UIWebView"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "descriptionSegment"]
+- ["CSo15UITableViewCell", "imageWebViewSegment"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "nameSegment"]
+- ["CSo15UITableViewCell", "numStopsSegment"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", "travelModeSegment"]
+- ["CSo15UITableViewCell", ""]
+- ["OSC20UITableViewCellStyle", "deinit"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "descriptionSegment"]
+- ["PSo18UITraitEnvironment", "imageWebViewSegment"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "nameSegment"]
+- ["PSo18UITraitEnvironment", "numStopsSegment"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", "travelModeSegment"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UIWebView"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "descriptionSegment"]
+- ["CSo6UIView", "imageWebViewSegment"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "nameSegment"]
+- ["CSo6UIView", "numStopsSegment"]
+- ["CSo6UIView", "setSelected"]
+- ["CSo6UIView", "travelModeSegment"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "descriptionSegment"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageWebViewSegment"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "nameSegment"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "numStopsSegment"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "travelModeSegment"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- ["Ps9_Hashable", "awakeFromNib"]
+- ["Ps9_Hashable", "descriptionSegment"]
+- ["Ps9_Hashable", "imageWebViewSegment"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "nameSegment"]
+- ["Ps9_Hashable", "numStopsSegment"]
+- ["Ps9_Hashable", "setSelected"]
+- ["Ps9_Hashable", "travelModeSegment"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "C10TransitApp21SegmentsTableViewCell"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "CSo15UITableViewCell"
+- "OSC20UITableViewCellStyle"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/TransitApp/TransitApp-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Modules/Polyline.swiftmodule/x86_64.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers/Polyline-Swift.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers/Polyline.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers/Polyline-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Modules/module.modulemap"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Modules/PopupContainer.swiftmodule/x86_64.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Headers/PopupContainer-Swift.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Headers/PopupContainer-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Modules/module.modulemap"
+interface-hash: "a55ced45315102a751fd8aff3bde03fb"

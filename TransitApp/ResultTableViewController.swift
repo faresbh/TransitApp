@@ -2,94 +2,101 @@
 //  ResultTableViewController.swift
 //  TransitApp
 //
-//  Created by medialis.net on 27/09/16.
+//  Created by Fares Ben Hamouda on 27/09/16.
 //  Copyright © 2016 Fares Ben Hamouda. All rights reserved.
 //
 
 import UIKit
 
+
 class ResultTableViewController: UITableViewController {
 
+    
+      var routes:[Route]?
+      var providers:[ProviderAttribute]?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        routes = Results.routes
+        providers = Results.providers
+        self.navigationItem.title="Routes found"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+   override func numberOfSections(in tableView: UITableView) -> Int {
+    
+    //showing no data label when empty routes
+    var numOfSections: Int = 0
+    if (routes?.count)! > 0
+    {
+        tableView.separatorStyle = .singleLine
+        print(routes?.count)
+        numOfSections                = (routes?.count)!
+        tableView.backgroundView = nil
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    else
+    {
+        let noDataLabel: UILabel     = UILabel(frame: CGRectMake(0, 0, tableView.bounds.size.width, tableView.bounds.size.height))
+        noDataLabel.text             = "No data available"
+        noDataLabel.textColor        = UIColor.black
+        noDataLabel.textAlignment    = .center
+        tableView.backgroundView = noDataLabel
+        tableView.separatorStyle = .none
     }
-
+    return numOfSections
+    
+    }
+    
+ 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return (routes![section].segments.count)
     }
 
-    /*
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        // retrieve the route cell
+        let cell:RouteTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellRoute") as! RouteTableViewCell
+        
+        
+        cell.typeRoute.text = routes?[section].type.getName()
+        cell.providerRoute.text = routes?[section].provider
+        cell.priceRoute.text = routes?[section].getPrice()
+        
+        return cell
+
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 61
+    }
+ 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        // retrieve the segment cell
+        let cell:SegmentsTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellSegment") as! SegmentsTableViewCell
+        
+        let segment = routes?[indexPath.section].segments[indexPath.row]
+        cell.nameSegment.text = segment?.name
+        cell.descriptionSegment.text = segment?.segmentDescription
+        cell.travelModeSegment.text = segment?.travelMode.rawValue
+        cell.numStopsSegment.text = String(describing: segment?.numStops)
+        
+        let imageUrl = NSURL(string: (segment?.iconUrl)!)
+      
+    
+        
+        //Creating a page request which will load our URL (Which points to our path)
+        let request: NSURLRequest = NSURLRequest(url: imageUrl as! URL)
+        cell.imageWebViewSegment.loadRequest(request as URLRequest)
+        
 
-        // Configure the cell...
-
+        
         return cell
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

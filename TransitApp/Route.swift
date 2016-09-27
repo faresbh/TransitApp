@@ -12,7 +12,6 @@ import CoreLocation
 public class Route: NSObject {
     
     let provider:String
-    
     var segments:[Segment] = []
     let properties:[String: AnyObject]?
     let currency:String?

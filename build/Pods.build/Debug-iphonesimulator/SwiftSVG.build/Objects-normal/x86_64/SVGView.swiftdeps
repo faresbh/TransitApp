@@ -1,0 +1,361 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SVGView"
+provides-nominal:
+- "C8SwiftSVG7SVGView"
+provides-member:
+- ["C8SwiftSVG7SVGView", ""]
+- ["C8SwiftSVG7SVGView", "init"]
+provides-dynamic-lookup:
+- "shapeLayer"
+- "SVGName"
+depends-top-level:
+- "UIView"
+- "CAShapeLayer"
+- !private "Bundle"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "StringLiteralType"
+- "SVGView"
+- "String"
+depends-member:
+- !private ["Ps9AnyObject", "Bundle"]
+- ["Ps9AnyObject", "CAShapeLayer"]
+- ["Ps9AnyObject", "SVGName"]
+- !private ["Ps9AnyObject", "addSublayer"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "nonOptionalLayer"]
+- ["Ps9AnyObject", "shapeLayer"]
+- !private ["Ps9AnyObject", "superlayer"]
+- !private ["Ps9AnyObject", "url"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["CSo6Bundle", "deinit"]
+- !private ["CSo6Bundle", "main"]
+- !private ["CSo6Bundle", "url"]
+- !private ["CSo7CALayer", "addSublayer"]
+- ["CSo7CALayer", "deinit"]
+- ["CSo7CALayer", "init"]
+- !private ["CSo7CALayer", "superlayer"]
+- !private ["PSo15CALayerDelegate", "Bundle"]
+- ["PSo15CALayerDelegate", "CAShapeLayer"]
+- ["PSo15CALayerDelegate", "SVGName"]
+- ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "nonOptionalLayer"]
+- ["PSo15CALayerDelegate", "shapeLayer"]
+- ["PSo15CALayerDelegate", ""]
+- !private ["PSo13CAMediaTiming", "addSublayer"]
+- ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "superlayer"]
+- ["CSo12CAShapeLayer", "deinit"]
+- ["CSo12CAShapeLayer", "init"]
+- !private ["CSo12CAShapeLayer", "superlayer"]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "Bundle"]
+- ["Ps7CVarArg", "CAShapeLayer"]
+- ["Ps7CVarArg", "SVGName"]
+- !private ["Ps7CVarArg", "addSublayer"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "nonOptionalLayer"]
+- ["Ps7CVarArg", "shapeLayer"]
+- !private ["Ps7CVarArg", "superlayer"]
+- !private ["Ps7CVarArg", "url"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Bundle"]
+- ["Ps28CustomDebugStringConvertible", "CAShapeLayer"]
+- ["Ps28CustomDebugStringConvertible", "SVGName"]
+- !private ["Ps28CustomDebugStringConvertible", "addSublayer"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "nonOptionalLayer"]
+- ["Ps28CustomDebugStringConvertible", "shapeLayer"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "superlayer"]
+- !private ["Ps28CustomDebugStringConvertible", "url"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "Bundle"]
+- ["Ps23CustomStringConvertible", "CAShapeLayer"]
+- ["Ps23CustomStringConvertible", "SVGName"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addSublayer"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "nonOptionalLayer"]
+- ["Ps23CustomStringConvertible", "shapeLayer"]
+- !private ["Ps23CustomStringConvertible", "superlayer"]
+- !private ["Ps23CustomStringConvertible", "url"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Bundle"]
+- ["Ps9Equatable", "CAShapeLayer"]
+- ["Ps9Equatable", "SVGName"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addSublayer"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "nonOptionalLayer"]
+- ["Ps9Equatable", "shapeLayer"]
+- !private ["Ps9Equatable", "superlayer"]
+- !private ["Ps9Equatable", "url"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Bundle"]
+- ["Ps8Hashable", "CAShapeLayer"]
+- ["Ps8Hashable", "SVGName"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addSublayer"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "nonOptionalLayer"]
+- ["Ps8Hashable", "shapeLayer"]
+- !private ["Ps8Hashable", "superlayer"]
+- !private ["Ps8Hashable", "url"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Bundle"]
+- ["PSo8NSCoding", "CAShapeLayer"]
+- ["PSo8NSCoding", "SVGName"]
+- !private ["PSo8NSCoding", "addSublayer"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "nonOptionalLayer"]
+- ["PSo8NSCoding", "shapeLayer"]
+- !private ["PSo8NSCoding", "superlayer"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Bundle"]
+- ["CSo8NSObject", "CAShapeLayer"]
+- ["CSo8NSObject", "SVGName"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "addSublayer"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "nonOptionalLayer"]
+- ["CSo8NSObject", "shapeLayer"]
+- !private ["CSo8NSObject", "superlayer"]
+- !private ["CSo8NSObject", "url"]
+- !private ["PSo16NSObjectProtocol", "Bundle"]
+- ["PSo16NSObjectProtocol", "CAShapeLayer"]
+- ["PSo16NSObjectProtocol", "SVGName"]
+- !private ["PSo16NSObjectProtocol", "addSublayer"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "nonOptionalLayer"]
+- ["PSo16NSObjectProtocol", "shapeLayer"]
+- !private ["PSo16NSObjectProtocol", "superlayer"]
+- !private ["PSo16NSObjectProtocol", "url"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["C8SwiftSVG7SVGView", "Bundle"]
+- ["C8SwiftSVG7SVGView", "CAShapeLayer"]
+- ["C8SwiftSVG7SVGView", "SVGName"]
+- ["C8SwiftSVG7SVGView", "String"]
+- ["C8SwiftSVG7SVGView", "deinit"]
+- ["C8SwiftSVG7SVGView", "init"]
+- !private ["C8SwiftSVG7SVGView", "nonOptionalLayer"]
+- ["C8SwiftSVG7SVGView", "shapeLayer"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "Bundle"]
+- ["PSo29UIAccessibilityIdentification", "CAShapeLayer"]
+- ["PSo29UIAccessibilityIdentification", "SVGName"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "nonOptionalLayer"]
+- ["PSo29UIAccessibilityIdentification", "shapeLayer"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "Bundle"]
+- ["PSo12UIAppearance", "CAShapeLayer"]
+- ["PSo12UIAppearance", "SVGName"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "nonOptionalLayer"]
+- ["PSo12UIAppearance", "shapeLayer"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "Bundle"]
+- ["PSo21UIAppearanceContainer", "CAShapeLayer"]
+- ["PSo21UIAppearanceContainer", "SVGName"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "nonOptionalLayer"]
+- ["PSo21UIAppearanceContainer", "shapeLayer"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "Bundle"]
+- ["PSo17UICoordinateSpace", "CAShapeLayer"]
+- ["PSo17UICoordinateSpace", "SVGName"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "nonOptionalLayer"]
+- ["PSo17UICoordinateSpace", "shapeLayer"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "Bundle"]
+- ["PSo13UIDynamicItem", "CAShapeLayer"]
+- ["PSo13UIDynamicItem", "SVGName"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "nonOptionalLayer"]
+- ["PSo13UIDynamicItem", "shapeLayer"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "Bundle"]
+- ["PSo18UIFocusEnvironment", "CAShapeLayer"]
+- ["PSo18UIFocusEnvironment", "SVGName"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "nonOptionalLayer"]
+- ["PSo18UIFocusEnvironment", "shapeLayer"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "Bundle"]
+- ["PSo11UIFocusItem", "CAShapeLayer"]
+- ["PSo11UIFocusItem", "SVGName"]
+- ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "nonOptionalLayer"]
+- ["PSo11UIFocusItem", "shapeLayer"]
+- ["PSo11UIFocusItem", ""]
+- !private ["CSo11UIResponder", "Bundle"]
+- ["CSo11UIResponder", "CAShapeLayer"]
+- ["CSo11UIResponder", "SVGName"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "nonOptionalLayer"]
+- ["CSo11UIResponder", "shapeLayer"]
+- !private ["PSo30UIResponderStandardEditActions", "Bundle"]
+- ["PSo30UIResponderStandardEditActions", "CAShapeLayer"]
+- ["PSo30UIResponderStandardEditActions", "SVGName"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "nonOptionalLayer"]
+- ["PSo30UIResponderStandardEditActions", "shapeLayer"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo18UITraitEnvironment", "Bundle"]
+- ["PSo18UITraitEnvironment", "CAShapeLayer"]
+- ["PSo18UITraitEnvironment", "SVGName"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "nonOptionalLayer"]
+- ["PSo18UITraitEnvironment", "shapeLayer"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "Bundle"]
+- ["CSo6UIView", "CAShapeLayer"]
+- ["CSo6UIView", "SVGName"]
+- ["CSo6UIView", "String"]
+- ["CSo6UIView", "deinit"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "nonOptionalLayer"]
+- ["CSo6UIView", "shapeLayer"]
+- ["CSo6UIView", ""]
+- ["V10Foundation3URL", "deinit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Bundle"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "CAShapeLayer"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "SVGName"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "nonOptionalLayer"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "shapeLayer"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Bundle"]
+- ["Ps9_Hashable", "CAShapeLayer"]
+- ["Ps9_Hashable", "SVGName"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addSublayer"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "nonOptionalLayer"]
+- ["Ps9_Hashable", "shapeLayer"]
+- !private ["Ps9_Hashable", "superlayer"]
+- !private ["Ps9_Hashable", "url"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "CSo6Bundle"
+- "CSo7CALayer"
+- "PSo15CALayerDelegate"
+- "PSo13CAMediaTiming"
+- "CSo12CAShapeLayer"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- "C8SwiftSVG7SVGView"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "V10Foundation3URL"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/SwiftSVG/SwiftSVG-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/SwiftSVG.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "f5bce96a50aa0ea8b523f891429ca64b"

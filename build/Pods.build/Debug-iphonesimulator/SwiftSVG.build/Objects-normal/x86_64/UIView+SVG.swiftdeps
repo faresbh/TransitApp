@@ -1,0 +1,152 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo6UIView", ""]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- "String"
+- !private "CAShapeLayer"
+- "UIView"
+- "URL"
+depends-member:
+- !private ["Ps9AnyObject", "CAShapeLayer"]
+- !private ["Ps9AnyObject", "addSublayer"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "nonOptionalLayer"]
+- !private ["CSo7CALayer", "addSublayer"]
+- ["CSo7CALayer", "deinit"]
+- !private ["CSo7CALayer", "init"]
+- !private ["PSo15CALayerDelegate", "CAShapeLayer"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "nonOptionalLayer"]
+- !private ["PSo13CAMediaTiming", "addSublayer"]
+- !private ["PSo13CAMediaTiming", "init"]
+- ["CSo12CAShapeLayer", "deinit"]
+- !private ["CSo12CAShapeLayer", "init"]
+- !private ["Ps7CVarArg", "CAShapeLayer"]
+- !private ["Ps7CVarArg", "addSublayer"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "nonOptionalLayer"]
+- !private ["Ps28CustomDebugStringConvertible", "CAShapeLayer"]
+- !private ["Ps28CustomDebugStringConvertible", "addSublayer"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "nonOptionalLayer"]
+- !private ["Ps23CustomStringConvertible", "CAShapeLayer"]
+- !private ["Ps23CustomStringConvertible", "addSublayer"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "nonOptionalLayer"]
+- !private ["Ps9Equatable", "CAShapeLayer"]
+- !private ["Ps9Equatable", "addSublayer"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "nonOptionalLayer"]
+- !private ["Ps8Hashable", "CAShapeLayer"]
+- !private ["Ps8Hashable", "addSublayer"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "nonOptionalLayer"]
+- !private ["PSo8NSCoding", "CAShapeLayer"]
+- !private ["PSo8NSCoding", "addSublayer"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "nonOptionalLayer"]
+- !private ["CSo8NSObject", "CAShapeLayer"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "addSublayer"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "nonOptionalLayer"]
+- !private ["PSo16NSObjectProtocol", "CAShapeLayer"]
+- !private ["PSo16NSObjectProtocol", "addSublayer"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "nonOptionalLayer"]
+- ["SS", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "CAShapeLayer"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "nonOptionalLayer"]
+- !private ["PSo12UIAppearance", "CAShapeLayer"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "nonOptionalLayer"]
+- !private ["PSo21UIAppearanceContainer", "CAShapeLayer"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "nonOptionalLayer"]
+- !private ["PSo17UICoordinateSpace", "CAShapeLayer"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "nonOptionalLayer"]
+- !private ["PSo13UIDynamicItem", "CAShapeLayer"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "nonOptionalLayer"]
+- !private ["PSo18UIFocusEnvironment", "CAShapeLayer"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "nonOptionalLayer"]
+- !private ["PSo11UIFocusItem", "CAShapeLayer"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "nonOptionalLayer"]
+- !private ["CSo11UIResponder", "CAShapeLayer"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "URL"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "nonOptionalLayer"]
+- !private ["PSo30UIResponderStandardEditActions", "CAShapeLayer"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "nonOptionalLayer"]
+- !private ["PSo18UITraitEnvironment", "CAShapeLayer"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "nonOptionalLayer"]
+- !private ["CSo6UIView", "CAShapeLayer"]
+- ["CSo6UIView", "String"]
+- ["CSo6UIView", "URL"]
+- ["CSo6UIView", "deinit"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "nonOptionalLayer"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CAShapeLayer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "nonOptionalLayer"]
+- !private ["Ps9_Hashable", "CAShapeLayer"]
+- !private ["Ps9_Hashable", "addSublayer"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "nonOptionalLayer"]
+depends-nominal:
+- "Ps9AnyObject"
+- "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- "CSo12CAShapeLayer"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "SS"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "V10Foundation3URL"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/SwiftSVG/SwiftSVG-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/SwiftSVG.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "e7538574acd5e82d00559b04d10e64ef"

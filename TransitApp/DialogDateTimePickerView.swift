@@ -2,7 +2,7 @@
 //  DialogDateTimePickerView.swift
 //  TransitApp
 //
-//  Created by medialis.net on 27/09/16.
+//  Created by Fares Ben Hamouda on 27/09/16.
 //  Copyright © 2016 Fares Ben Hamouda. All rights reserved.
 //
 

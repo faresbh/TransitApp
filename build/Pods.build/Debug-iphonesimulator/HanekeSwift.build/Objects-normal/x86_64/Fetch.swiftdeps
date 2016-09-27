@@ -1,0 +1,81 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FetchState"
+- "Fetch"
+- "Wrapper"
+provides-nominal:
+- "O6Haneke10FetchState"
+- "C6Haneke5Fetch"
+- "C6Haneke7Wrapper"
+provides-member:
+- ["O6Haneke10FetchState", ""]
+- ["C6Haneke5Fetch", ""]
+- ["C6Haneke7Wrapper", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "FetchState"
+- "Bool"
+- "Error"
+- "Wrapper"
+- "AssignmentPrecedence"
+- "Fetch"
+- !private "BooleanLiteralType"
+depends-member:
+- ["Ps9AnyObject", "FetchState"]
+- !private ["Ps9AnyObject", "Wrapper"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "onFailure"]
+- !private ["Ps9AnyObject", "onSuccess"]
+- !private ["Ps9AnyObject", "state"]
+- !private ["Ps9AnyObject", "value"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["C6Haneke5Fetch", "Bool"]
+- ["C6Haneke5Fetch", "Error"]
+- ["C6Haneke5Fetch", "Failer"]
+- ["C6Haneke5Fetch", "FetchState"]
+- ["C6Haneke5Fetch", "Succeeder"]
+- ["C6Haneke5Fetch", "T"]
+- !private ["C6Haneke5Fetch", "Wrapper"]
+- ["C6Haneke5Fetch", "deinit"]
+- ["C6Haneke5Fetch", "fail"]
+- ["C6Haneke5Fetch", "hasFailed"]
+- ["C6Haneke5Fetch", "hasSucceeded"]
+- ["C6Haneke5Fetch", "init"]
+- ["C6Haneke5Fetch", "onFailure"]
+- ["C6Haneke5Fetch", "onSuccess"]
+- !private ["C6Haneke5Fetch", "state"]
+- ["C6Haneke5Fetch", "succeed"]
+- ["O6Haneke10FetchState", "Error"]
+- ["O6Haneke10FetchState", "T"]
+- ["O6Haneke10FetchState", "Wrapper"]
+- ["O6Haneke10FetchState", "deinit"]
+- ["O6Haneke10FetchState", "failure"]
+- ["O6Haneke10FetchState", "pending"]
+- ["O6Haneke10FetchState", "success"]
+- ["Sq", "deinit"]
+- ["C6Haneke7Wrapper", "T"]
+- ["C6Haneke7Wrapper", "deinit"]
+- ["C6Haneke7Wrapper", "init"]
+- ["C6Haneke7Wrapper", "value"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "C6Haneke5Fetch"
+- "O6Haneke10FetchState"
+- "Sq"
+- "C6Haneke7Wrapper"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/HanekeSwift/HanekeSwift-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/HanekeSwift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "6a273b29a50e564d7b9661dd87d43343"

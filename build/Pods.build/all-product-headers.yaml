@@ -4,65 +4,6 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "Alamofire-Swift.h",
-          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
-        },
-        {
-          'type': 'file',
-          'name': "Alamofire-umbrella.h",
-          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "module.modulemap",
-          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Headers",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "MMMaterialDesignSpinner-Swift.h",
-          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Headers/MMMaterialDesignSpinner-Swift.h"
-        },
-        {
-          'type': 'file',
-          'name': "MMMaterialDesignSpinner-umbrella.h",
-          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/MMMaterialDesignSpinner/MMMaterialDesignSpinner-umbrella.h"
-        },
-        {
-          'type': 'file',
-          'name': "MMMaterialDesignSpinner.h",
-          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/Pods/MMMaterialDesignSpinner/Pod/Classes/MMMaterialDesignSpinner.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Modules",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "module.modulemap",
-          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/MMMaterialDesignSpinner.build/module.modulemap"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
       'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MaterialKit/MaterialKit.framework/Headers",
       'contents': [
         {
@@ -112,6 +53,65 @@
           'type': 'file',
           'name': "module.modulemap",
           'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/Pods-TransitApp.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Polyline-Swift.h",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers/Polyline-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Polyline-umbrella.h",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/Polyline/Polyline-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Polyline.h",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/Pods/Polyline/Polyline/Polyline.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/Polyline.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PopupContainer-Swift.h",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Headers/PopupContainer-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PopupContainer-umbrella.h",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/Pods/Target Support Files/PopupContainer/PopupContainer-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/PopupContainer.build/module.modulemap"
         }
       ]
     }

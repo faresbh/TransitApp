@@ -1,13 +1,10 @@
 target "TransitApp" do
-
-pod 'Alamofire', '~> 4.0.0'
-pod 'MMMaterialDesignSpinner' , '~> 0.2.1'
-pod 'GoogleMaps'
-pod 'MaterialKit', :git => 'https://github.com/faresbh/MaterialKit', :branch => 'swift3'
-pod 'PopupContainer', :git => 'https://github.com/faresbh/PopupContainer', :branch => 'swift3'
-pod 'Polyline', '~> 4.0'
-
-use_frameworks!
+    use_frameworks!
+    
+    pod 'GoogleMaps'
+    pod 'MaterialKit', :git => 'https://github.com/faresbh/MaterialKit', :branch => 'swift3'
+    pod 'PopupContainer', :git => 'https://github.com/faresbh/PopupContainer', :branch => 'swift3'
+    pod 'Polyline', '~> 4.0'
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|
@@ -16,5 +13,5 @@ use_frameworks!
             end
         end
     end
-
+    
 end

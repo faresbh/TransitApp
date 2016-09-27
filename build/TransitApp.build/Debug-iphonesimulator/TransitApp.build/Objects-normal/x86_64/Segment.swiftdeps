@@ -8,32 +8,31 @@ provides-member:
 - ["C10TransitApp7Segment", ""]
 - ["OC10TransitApp7Segment4Mode", ""]
 provides-dynamic-lookup:
-- "name"
-- "segmentDescription"
-- "isInMoveSegment"
-- "polyline"
-- "iconImage"
-- "getStartTime"
 - "iconUrl"
+- "getStartTime"
 - "getArrivalTime"
+- "segmentDescription"
+- "name"
+- "polyline"
+- "numStops"
+- "isInMoveSegment"
 depends-top-level:
-- "String"
-- "NSDate"
-- "Segment"
-- !private "~="
-- !private ">"
-- "NSObject"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- "=="
-- "Int"
-- "UIImage"
-- "StringLiteralType"
 - "CLLocationCoordinate2D"
 - "Bool"
-- "AnyObject"
-- !private "BooleanLiteralType"
 - "Stop"
+- "NSObject"
+- "AnyObject"
+- "String"
+- "CastingPrecedence"
+- "=="
+- "AssignmentPrecedence"
+- "Segment"
+- !private "~="
+- "StringLiteralType"
+- !private ">"
+- !private "BooleanLiteralType"
+- "NSDate"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "Mode"]
 - !private ["Ps9AnyObject", "Stop"]
@@ -44,7 +43,6 @@ depends-member:
 - ["Ps9AnyObject", "getDestinationPoint"]
 - ["Ps9AnyObject", "getStartPoint"]
 - ["Ps9AnyObject", "getStartTime"]
-- ["Ps9AnyObject", "iconImage"]
 - ["Ps9AnyObject", "iconUrl"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isInMoveSegment"]
@@ -89,7 +87,6 @@ depends-member:
 - ["Ps7CVarArg", "getStartPoint"]
 - ["Ps7CVarArg", "getStartTime"]
 - !private ["Ps7CVarArg", "hashValue"]
-- ["Ps7CVarArg", "iconImage"]
 - ["Ps7CVarArg", "iconUrl"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "isInMoveSegment"]
@@ -129,7 +126,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "getDestinationPoint"]
 - ["Ps28CustomDebugStringConvertible", "getStartPoint"]
 - ["Ps28CustomDebugStringConvertible", "getStartTime"]
-- ["Ps28CustomDebugStringConvertible", "iconImage"]
 - ["Ps28CustomDebugStringConvertible", "iconUrl"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isInMoveSegment"]
@@ -174,7 +170,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "getStartPoint"]
 - ["Ps23CustomStringConvertible", "getStartTime"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
-- ["Ps23CustomStringConvertible", "iconImage"]
 - ["Ps23CustomStringConvertible", "iconUrl"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isInMoveSegment"]
@@ -203,7 +198,6 @@ depends-member:
 - ["Ps9Equatable", "getStartPoint"]
 - ["Ps9Equatable", "getStartTime"]
 - ["Ps9Equatable", "hashValue"]
-- ["Ps9Equatable", "iconImage"]
 - ["Ps9Equatable", "iconUrl"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isInMoveSegment"]
@@ -242,7 +236,6 @@ depends-member:
 - ["Ps8Hashable", "getStartPoint"]
 - ["Ps8Hashable", "getStartTime"]
 - ["Ps8Hashable", "hashValue"]
-- ["Ps8Hashable", "iconImage"]
 - ["Ps8Hashable", "iconUrl"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "isInMoveSegment"]
@@ -317,14 +310,12 @@ depends-member:
 - ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "Stop"]
 - ["CSo8NSObject", "String"]
-- ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "datetime"]
 - ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "getArrivalTime"]
 - ["CSo8NSObject", "getDestinationPoint"]
 - ["CSo8NSObject", "getStartPoint"]
 - ["CSo8NSObject", "getStartTime"]
-- ["CSo8NSObject", "iconImage"]
 - ["CSo8NSObject", "iconUrl"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isInMoveSegment"]
@@ -343,7 +334,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "getDestinationPoint"]
 - ["PSo16NSObjectProtocol", "getStartPoint"]
 - ["PSo16NSObjectProtocol", "getStartTime"]
-- ["PSo16NSObjectProtocol", "iconImage"]
 - ["PSo16NSObjectProtocol", "iconUrl"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isInMoveSegment"]
@@ -395,18 +385,16 @@ depends-member:
 - ["C10TransitApp7Segment", "NSDate"]
 - ["C10TransitApp7Segment", "Stop"]
 - ["C10TransitApp7Segment", "String"]
-- ["C10TransitApp7Segment", "UIImage"]
 - ["C10TransitApp7Segment", "deinit"]
 - ["C10TransitApp7Segment", "getArrivalTime"]
 - ["C10TransitApp7Segment", "getDestinationPoint"]
 - ["C10TransitApp7Segment", "getStartPoint"]
 - ["C10TransitApp7Segment", "getStartTime"]
-- ["C10TransitApp7Segment", "iconImage"]
 - ["C10TransitApp7Segment", "iconUrl"]
 - ["C10TransitApp7Segment", "init"]
 - ["C10TransitApp7Segment", "isInMoveSegment"]
 - ["C10TransitApp7Segment", "name"]
-- !private ["C10TransitApp7Segment", "numStops"]
+- ["C10TransitApp7Segment", "numStops"]
 - ["C10TransitApp7Segment", "polyline"]
 - ["C10TransitApp7Segment", "segmentDescription"]
 - !private ["C10TransitApp7Segment", "stops"]
@@ -466,7 +454,6 @@ depends-member:
 - ["Ps9_Hashable", "getStartPoint"]
 - ["Ps9_Hashable", "getStartTime"]
 - ["Ps9_Hashable", "hashValue"]
-- ["Ps9_Hashable", "iconImage"]
 - ["Ps9_Hashable", "iconUrl"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "isInMoveSegment"]
@@ -587,18 +574,20 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/Fares/Documents/Projects/TransitApp/TransitApp/TransitApp-Bridging-Header.h"
-- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Headers/MMMaterialDesignSpinner.h"
-- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Headers/MMMaterialDesignSpinner-umbrella.h"
-- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Modules/Polyline.swiftmodule/x86_64.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers/Polyline-Swift.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers/Polyline.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Headers/Polyline-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Modules/module.modulemap"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
@@ -643,4 +632,8 @@ depends-external:
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/Fares/Documents/Projects/TransitApp/Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
-interface-hash: "689b9ab5c7662e4d01669fdcea182665"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Modules/PopupContainer.swiftmodule/x86_64.swiftmodule"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Headers/PopupContainer-Swift.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Headers/PopupContainer-umbrella.h"
+- "/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/PopupContainer/PopupContainer.framework/Modules/module.modulemap"
+interface-hash: "b447d175893eca59e5dd8f5cdffe5707"

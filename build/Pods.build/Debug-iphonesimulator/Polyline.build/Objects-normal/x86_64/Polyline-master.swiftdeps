@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "8bc6c33396e0d67a3a37f7627365046e"
+build_time: [528330323, 886492000]
+inputs:
+  "/Users/Fares/Documents/Projects/TransitApp/Pods/Polyline/Polyline/Polyline.swift": [528319755, 0]

@@ -1,15 +1,19 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "776fa849430a3b289999fba3a39ddab6"
-build_time: [528242942, 347529000]
+options: "3cee6660edc982d17055dfe49b08e23d"
+build_time: [528330329, 788342000]
 inputs:
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Data.swift": [528236619, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Segment.swift": [528238387, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Segment.swift": [528324695, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/IJProgressView.swift": [528136117, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/ResultTableViewController.swift": [528328977, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Stop.swift": [528238275, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SplashViewController.swift": [528237864, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SearchViewController.swift": [528242930, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Extensions.swift": [528234348, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Route.swift": [528239013, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SplashViewController.swift": [528322020, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/RouteTableViewCell.swift": [528318808, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SearchViewController.swift": [528324113, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Extensions.swift": [528318995, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/DialogDateTimePickerView.swift": [528322690, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/SegmentsTableViewCell.swift": [528328928, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/Route.swift": [528324113, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/AppDelegate.swift": [528157186, 0]
-  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/DataParser.swift": [528237802, 0]
+  "/Users/Fares/Documents/Projects/TransitApp/TransitApp/DataParser.swift": [528323993, 0]
   "/Users/Fares/Documents/Projects/TransitApp/TransitApp/ProviderAttribute.swift": [528239013, 0]

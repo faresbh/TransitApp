@@ -112,9 +112,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import ObjectiveC;
+@import CoreGraphics;
 @import Foundation;
 @import CoreLocation;
-@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -148,11 +148,45 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DataParser *
 - (void)consultServerForOrigin:(NSString * _Nonnull)origin destination:(NSString * _Nonnull)destination time:(NSDate * _Nullable)time sucess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))sucess fail:(void (^ _Nonnull)(NSError * _Nullable))fail;
 @end
 
+@class UIDatePicker;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10TransitApp24DialogDateTimePickerView")
+@interface DialogDateTimePickerView : UIView
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified dateTimePicker;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10TransitApp17ProviderAttribute")
 @interface ProviderAttribute : NSObject
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name dataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class UITableView;
+@class UITableViewCell;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC10TransitApp25ResultTableViewController")
+@interface ResultTableViewController : UITableViewController
+@property (nonatomic, copy) NSArray<Route *> * _Nullable routes;
+@property (nonatomic, copy) NSArray<ProviderAttribute *> * _Nullable providers;
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ResultTableViewController (SWIFT_EXTENSION(TransitApp))
+- (CGRect)CGRectMake:(CGFloat)x :(CGFloat)y :(CGFloat)width :(CGFloat)height;
 @end
 
 @class Segment;
@@ -175,35 +209,52 @@ SWIFT_CLASS("_TtC10TransitApp5Route")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
+@class UILabel;
+
+SWIFT_CLASS("_TtC10TransitApp18RouteTableViewCell")
+@interface RouteTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceRoute;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified providerRoute;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified typeRoute;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CLLocationManager;
+@class PopupContainer;
 @class GMSMapView;
 @class UITextField;
 @class UIImageView;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10TransitApp20SearchViewController")
-@interface SearchViewController : UIViewController <CLLocationManagerDelegate>
+@interface SearchViewController : UIViewController <CLLocationManagerDelegate, UITextFieldDelegate>
 @property (nonatomic, readonly, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified mapView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified destinationTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified departTextField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified dateTravel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateTimeTravel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pinLocationImage;
+@property (nonatomic, strong) PopupContainer * _Nullable popupDateTimePicker;
+@property (nonatomic, strong) DialogDateTimePickerView * _Null_unspecified dateTimePickerView;
 - (void)viewDidLoad;
 - (void)getUserLocation;
-- (IBAction)navigateToResults:(id _Nonnull)sender;
+- (void)openDatetimePickerDialog;
+- (void)dateTimePickerChanged;
+- (IBAction)navigateToResultsWithSender:(id _Nonnull)sender;
+- (void)hideKeyboard;
+- (void)drawIterinaireWithAddressDep:(NSString * _Nonnull)addressDep addressDes:(NSString * _Nonnull)addressDes;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImage;
 
 SWIFT_CLASS("_TtC10TransitApp7Segment")
 @interface Segment : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
+@property (nonatomic, readonly) NSInteger numStops;
 @property (nonatomic, readonly, copy) NSString * _Nullable segmentDescription;
-@property (nonatomic, strong) UIImage * _Nullable iconImage;
 @property (nonatomic, readonly, copy) NSString * _Nonnull iconUrl;
 @property (nonatomic, readonly, copy) NSString * _Nullable polyline;
 - (nonnull instancetype)initWithDataDictionary:(NSDictionary<NSString *, id> * _Nonnull)dataDictionary OBJC_DESIGNATED_INITIALIZER;
@@ -213,13 +264,26 @@ SWIFT_CLASS("_TtC10TransitApp7Segment")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
-@class MMMaterialDesignSpinner;
+@class UIWebView;
+
+SWIFT_CLASS("_TtC10TransitApp21SegmentsTableViewCell")
+@interface SegmentsTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numStopsSegment;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified travelModeSegment;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionSegment;
+@property (nonatomic, weak) IBOutlet UIWebView * _Null_unspecified imageWebViewSegment;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameSegment;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIColor;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC10TransitApp20SplashViewController")
 @interface SplashViewController : UIViewController
-@property (nonatomic, strong) MMMaterialDesignSpinner * _Null_unspecified spinnerView;
 @property (nonatomic, strong) UIColor * _Null_unspecified greenBarColor;
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (void)viewDidLoad;

@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Fares/Documents/Projects/TransitApp/build/Debug-iphonesimulator/Polyline/Polyline.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Fares/Documents/Projects/TransitApp/build/Pods.build/Debug-iphonesimulator/Polyline.build/unextended-module.modulemap',
+    }]
+  }]
+}

@@ -19,7 +19,6 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var destinationTextField: UITextField!
     @IBOutlet weak var departTextField: UITextField!
-
     @IBOutlet weak var dateTimeTravel: UILabel!
     @IBOutlet weak var pinLocationImage: UIImageView!
     
@@ -118,7 +117,7 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
     
     @IBAction func navigateToResults(sender: AnyObject) {
         
-         self.performSegue(withIdentifier: " from_search_to_results", sender: nil)
+         self.performSegue(withIdentifier: "from_search_to_results", sender: nil)
 
     }
     

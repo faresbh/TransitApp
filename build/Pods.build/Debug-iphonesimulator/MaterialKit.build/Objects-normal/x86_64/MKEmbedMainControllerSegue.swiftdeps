@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 - "perform"
 depends-top-level:
-- "AssignmentPrecedence"
-- !private "assertionFailure"
-- "CastingPrecedence"
-- "UIStoryboardSegue"
-- !private "MKSideDrawerViewController"
 - "MKEmbedMainControllerSegue"
 - !private "StringLiteralType"
+- "UIStoryboardSegue"
+- !private "MKSideDrawerViewController"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "assertionFailure"
 depends-member:
 - !private ["Ps9AnyObject", "assertionFailure"]
 - !private ["Ps9AnyObject", "destination"]
