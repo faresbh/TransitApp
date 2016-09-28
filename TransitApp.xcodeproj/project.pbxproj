@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273FBE391D9BBE4D0051C895 /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273FBE381D9BBE4D0051C895 /* Reachibility.swift */; };
 		27A6DA471D995C4400D82628 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6DA461D995C4400D82628 /* Route.swift */; };
 		27A6DA491D99600900D82628 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6DA481D99600900D82628 /* Stop.swift */; };
 		27A6DA4B1D9960E800D82628 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6DA4A1D9960E800D82628 /* Segment.swift */; };
@@ -14,6 +15,7 @@
 		27B1BB421D9AB97A00B0AC0D /* DialogDateTimePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B1BB411D9AB97A00B0AC0D /* DialogDateTimePicker.xib */; };
 		27B1BB441D9ABA1700B0AC0D /* DialogDateTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1BB431D9ABA1700B0AC0D /* DialogDateTimePickerView.swift */; };
 		27B1BB461D9ACB8C00B0AC0D /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1BB451D9ACB8C00B0AC0D /* ResultTableViewController.swift */; };
+		27FA4E871D9C05E900E8343A /* DetailSegmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA4E861D9C05E900E8343A /* DetailSegmentTableViewController.swift */; };
 		621A04D61D9AF61E00C5085D /* RouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A04D51D9AF61E00C5085D /* RouteTableViewCell.swift */; };
 		621A04D81D9AF9D300C5085D /* SegmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A04D71D9AF9D300C5085D /* SegmentsTableViewCell.swift */; };
 		6277993C1D98192A005E703C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277993B1D98192A005E703C /* AppDelegate.swift */; };
@@ -43,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		02C4B179D8E86B0BA1505942 /* Pods-TransitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransitApp/Pods-TransitApp.release.xcconfig"; sourceTree = "<group>"; };
+		273FBE381D9BBE4D0051C895 /* Reachibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachibility.swift; sourceTree = "<group>"; };
 		27A6DA461D995C4400D82628 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		27A6DA481D99600900D82628 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		27A6DA4A1D9960E800D82628 /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		27B1BB411D9AB97A00B0AC0D /* DialogDateTimePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogDateTimePicker.xib; sourceTree = "<group>"; };
 		27B1BB431D9ABA1700B0AC0D /* DialogDateTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogDateTimePickerView.swift; sourceTree = "<group>"; };
 		27B1BB451D9ACB8C00B0AC0D /* ResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
+		27FA4E861D9C05E900E8343A /* DetailSegmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSegmentTableViewController.swift; sourceTree = "<group>"; };
 		48F60EB2165E6758187A2034 /* Pods-TransitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransitApp/Pods-TransitApp.debug.xcconfig"; sourceTree = "<group>"; };
 		621A04D51D9AF61E00C5085D /* RouteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTableViewCell.swift; sourceTree = "<group>"; };
 		621A04D71D9AF9D300C5085D /* SegmentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentsTableViewCell.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				6277993D1D98192A005E703C /* SplashViewController.swift */,
 				6277996B1D987F17005E703C /* SearchViewController.swift */,
 				27B1BB451D9ACB8C00B0AC0D /* ResultTableViewController.swift */,
+				27FA4E861D9C05E900E8343A /* DetailSegmentTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 		6277995E1D981969005E703C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				273FBE381D9BBE4D0051C895 /* Reachibility.swift */,
 				6277996D1D98845B005E703C /* Data.swift */,
 				627799731D99AAD1005E703C /* Extensions.swift */,
 				627799651D9832A3005E703C /* IJProgressView.swift */,
@@ -236,6 +242,7 @@
 				627799361D98192A005E703C /* Resources */,
 				7D5299706E7B8BD8F2DBD65A /* [CP] Embed Pods Frameworks */,
 				0801156A867E7A9B8F58ABAA /* [CP] Copy Pods Resources */,
+				50B302040565A00C9E9D8029 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +351,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitApp/Pods-TransitApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		50B302040565A00C9E9D8029 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitApp/Pods-TransitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7D5299706E7B8BD8F2DBD65A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +409,8 @@
 				27B1BB461D9ACB8C00B0AC0D /* ResultTableViewController.swift in Sources */,
 				27A6DA491D99600900D82628 /* Stop.swift in Sources */,
 				6277993E1D98192A005E703C /* SplashViewController.swift in Sources */,
+				273FBE391D9BBE4D0051C895 /* Reachibility.swift in Sources */,
+				27FA4E871D9C05E900E8343A /* DetailSegmentTableViewController.swift in Sources */,
 				621A04D61D9AF61E00C5085D /* RouteTableViewCell.swift in Sources */,
 				6277996C1D987F17005E703C /* SearchViewController.swift in Sources */,
 				627799741D99AAD1005E703C /* Extensions.swift in Sources */,

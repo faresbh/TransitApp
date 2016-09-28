@@ -14,7 +14,8 @@ class SegmentsTableViewCell: UITableViewCell {
     @IBOutlet weak var travelModeSegment: UILabel!
     @IBOutlet weak var descriptionSegment: UILabel!
  
-    @IBOutlet weak var imageWebViewSegment: UIWebView!
+    @IBOutlet weak var imageSegment: UIImageView!
+
     @IBOutlet weak var nameSegment: UILabel!
     
     override func awakeFromNib() {

@@ -8,13 +8,14 @@
 
 import UIKit
 
-
-class ResultTableViewController: UITableViewController {
+class ResultTableViewController: UITableViewController , UIGestureRecognizerDelegate{
 
     
       var routes:[Route]?
       var providers:[ProviderAttribute]?
     
+      var selectedSectionIndex : Int = 0
+      var selectedRoute : Route!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +52,7 @@ class ResultTableViewController: UITableViewController {
     
  
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+       
         return (routes![section].segments.count)
     }
 
@@ -64,6 +65,14 @@ class ResultTableViewController: UITableViewController {
         cell.typeRoute.text = routes?[section].type.getName()
         cell.providerRoute.text = routes?[section].provider
         cell.priceRoute.text = routes?[section].getPrice()
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didSelectHeader))
+        tapRecognizer.delegate = self
+        tapRecognizer.numberOfTapsRequired = 1
+        tapRecognizer.numberOfTouchesRequired = 1
+        
+        cell.addGestureRecognizer(tapRecognizer)
+        
         
         return cell
 
@@ -82,21 +91,43 @@ class ResultTableViewController: UITableViewController {
         cell.nameSegment.text = segment?.name
         cell.descriptionSegment.text = segment?.segmentDescription
         cell.travelModeSegment.text = segment?.travelMode.rawValue
-        cell.numStopsSegment.text = String(describing: segment?.numStops)
+        cell.numStopsSegment.text = "Num Stop : "+String(describing: segment!.numStops)
         
-        let imageUrl = NSURL(string: (segment?.iconUrl)!)
-      
+        cell.imageSegment.image = (segment?.svgImage)!
     
-        
-        //Creating a page request which will load our URL (Which points to our path)
-        let request: NSURLRequest = NSURLRequest(url: imageUrl as! URL)
-        cell.imageWebViewSegment.loadRequest(request as URLRequest)
-        
-
         
         return cell
     }
+    
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedSectionIndex = indexPath.section
+    }
+    
+    func didSelectHeader()
+    {
+        
+        selectedRoute = routes?[selectedSectionIndex]
+        self.performSegue(withIdentifier: "from_results_to_detail", sender: nil)
+
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "from_results_to_detail"
+        {
+            
+            if let destinationVC = segue.destination as? DetailSegmentTableViewController
+                
+            {
+                destinationVC.currentRoute = selectedRoute
+            }
+            
+        }
+        
+    }
 
 
 }

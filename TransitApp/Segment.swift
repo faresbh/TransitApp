@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 import CoreLocation
+import SVGKit
 
 public class Segment: NSObject {
     
-   
+    
     public enum Mode:String{
         case walking, subway, bus, driving, cycling, setup, parking, change
     }
@@ -21,10 +22,11 @@ public class Segment: NSObject {
     let numStops:Int
     let travelMode:Mode
     let segmentDescription: String?
-
+    
+    
     let iconUrl:String
     let polyline:String?
-    
+    var svgImage : UIImage?
     private var stops:[Stop] = []
     
     init(dataDictionary:[String: AnyObject]){
@@ -37,17 +39,26 @@ public class Segment: NSObject {
         self.iconUrl = dataDictionary["icon_url"] as! String
         self.polyline = dataDictionary["polyline"] as? String
         
+        self.svgImage = UIImage(named: "icon")
+        
+        if Reachability.isConnectedToNetwork()
+        {
+               let imageUrl = NSURL(string: (self.iconUrl))
+                self.svgImage = SVGKImage(contentsOf: imageUrl as URL!).uiImage
+
+            
+        }
         if let stopDictionary = dataDictionary["stops"]{
             for stop in stopDictionary.allObjects{
                 let stopPoint = Stop(dataDictionary: stop as! [String : AnyObject])
-                self.stops.append(stopPoint)
+                self.stops.append(stopPoint)    
             }
         }
     }
     
     func isInMoveSegment()->Bool{
         
-    
+        
         if self.travelMode.hashValue > 4{
             return false
         }

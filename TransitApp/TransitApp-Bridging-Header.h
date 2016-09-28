@@ -9,6 +9,8 @@
 #ifndef TransitApp_Bridging_Header_h
 #define TransitApp_Bridging_Header_h
 
-//#import <MMMaterialDesignSpinner/MMMaterialDesignSpinner.h>
 
 #endif /* TransitApp_Bridging_Header_h */
+
+#import <MMMaterialDesignSpinner/MMMaterialDesignSpinner.h>
+#import <SVGKit/SVGKit.h> 
