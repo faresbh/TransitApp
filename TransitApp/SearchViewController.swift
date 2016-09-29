@@ -12,7 +12,7 @@ import CoreLocation
 import PopupContainer
 
 class SearchViewController: UIViewController , CLLocationManagerDelegate , UITextFieldDelegate {
-
+    
     
     let locationManager : CLLocationManager! = CLLocationManager()
     
@@ -20,32 +20,32 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
     @IBOutlet weak var destinationTextField: UITextField!
     @IBOutlet weak var departTextField: UITextField!
     @IBOutlet weak var dateTimeTravel: UILabel!
- 
+    
     
     var popupDateTimePicker: PopupContainer?
     var dateTimePickerView : DialogDateTimePickerView!
-
+    
     var departureLatLng : CLLocationCoordinate2D!
     var destinationLatLng : CLLocationCoordinate2D!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
         let originMarker = GMSMarker()
         originMarker.icon = GMSMarker.markerImage(with: UIColor.blue)
         
         originMarker.title = "Destination"
         originMarker.map = self.mapView
-    
-       
+        
+        
         destinationTextField.delegate = self
         departTextField.delegate = self
         
         dateTimeTravel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SearchViewController.openDatetimePickerDialog)))
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self , action: #selector(SearchViewController.hideKeyboard)))
         
-        //hard coded 
+        //hard coded
         destinationTextField.text = "Leipziger Platz 7, 10117 Berlin, Deutschland"
         departTextField.text = "Torstraße 103, 10119 Berlin, Deutschland"
         
@@ -55,10 +55,10 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
         //mapView.settings.myLocationButton = true
         
         self.drawIterinaire(addressDep: departTextField.text!, addressDes: destinationTextField.text!)
-
-    
+        
+        
     }
-
+    
     
     
     func openDatetimePickerDialog()
@@ -70,33 +70,33 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
         dateTimePickerView.dateTimePicker.date = today as Date
         dateTimePickerView.dateTimePicker.addTarget(self, action: #selector(SearchViewController.dateTimePickerChanged), for: UIControlEvents.valueChanged)
         self.popupDateTimePicker?.show()
-
+        
     }
     
     func dateTimePickerChanged()
     {
         let formatter = DateFormatter()
         formatter.dateFormat = "mm.dd.yyy hh:mm a"
- 
+        
         let choosenDateTime = formatter.string(from: dateTimePickerView.dateTimePicker.date)
-
+        
         dateTimeTravel.text =  choosenDateTime
-
+        
     }
     
     @IBAction func navigateToResults(sender: AnyObject) {
         
-         self.performSegue(withIdentifier: "from_search_to_results", sender: nil)
-
+        self.performSegue(withIdentifier: "from_search_to_results", sender: nil)
+        
     }
     
     func hideKeyboard(){
         
-   
-            self.view.endEditing(true)
+        
+        self.view.endEditing(true)
         
     }
-  
+    
     
     private func drawPolyline(departure : CLLocationCoordinate2D, destination: CLLocationCoordinate2D)
     {
@@ -111,20 +111,20 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
         polyline.map = mapView
         
         self.centerMapCamera(departure: departure, destination: destination, offset: true)
-
+        
         let markerDep = GMSMarker()
         markerDep.position = self.departureLatLng
         markerDep.title = "Departure"
         markerDep.map = self.mapView
         
-
+        
         let markerDes = GMSMarker()
         markerDes.position = self.destinationLatLng
         markerDes.title = "Destination"
         markerDes.map = self.mapView
-
+        
     }
-  
+    
     
     func drawIterinaire(addressDep : String , addressDes : String )
     {
@@ -150,21 +150,21 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
                         
                         
                         self.drawPolyline(departure: self.departureLatLng, destination: self.destinationLatLng)
-
+                        
                         
                     }
                 })
-
+                
                 
             }
         })
-      
+        
         
     }
     
     
     func centerMapCamera(departure: CLLocationCoordinate2D?, destination: CLLocationCoordinate2D?, offset:Bool)
-        {
+    {
         var topMargin : CGFloat = 100
         
         if offset {
@@ -177,7 +177,7 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
         
         self.mapView.animate(to: camera!)
     }
-
-
-
+    
+    
+    
 }

@@ -29,7 +29,7 @@ public class Stop: NSObject {
         self.name = stopString
     }
     
-     override init()
+    override init()
     {
         
     }

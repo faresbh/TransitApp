@@ -2,7 +2,7 @@
 //  StopTableViewCell.swift
 //  TransitApp
 //
-//  Created by medialis.net on 29/09/16.
+//  Created by Fares Ben Hamouda on 29/09/16.
 //  Copyright © 2016 Fares Ben Hamouda. All rights reserved.
 //
 

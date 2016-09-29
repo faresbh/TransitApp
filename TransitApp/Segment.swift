@@ -26,7 +26,7 @@ public class Segment: NSObject {
     let polyline:String?
     var svgImage : UIImage?
     let stops:[Stop]!
-  
+    
     init(dataDictionary:[String: AnyObject]){
         self.name = dataDictionary["name"] as? String
         self.numStops = dataDictionary["num_stops"] as! Int
@@ -37,14 +37,26 @@ public class Segment: NSObject {
         self.iconUrl = dataDictionary["icon_url"] as! String
         self.polyline = dataDictionary["polyline"] as? String
         
-        self.svgImage = UIImage(named: "icon")
+        
+        
+        if Reachability.isConnectedToNetwork()
+        {
+            
+            let imageUrl = NSURL(string: (self.iconUrl))
+            self.svgImage = SVGKImage(contentsOf: imageUrl as URL!).uiImage
+            
+        }
+        else
+        {
+            self.svgImage = UIImage(named: "icon")
+        }
         
         stops = [Stop]()
         
         if let stopDictionary = dataDictionary["stops"]{
             for stop in stopDictionary.allObjects{
                 let stopPoint = Stop(dataDictionary: stop as! [String : AnyObject])
-                self.stops.append(stopPoint)    
+                self.stops.append(stopPoint)
             }
         }
     }
@@ -52,17 +64,8 @@ public class Segment: NSObject {
     func getSvgImage() -> UIImage
     {
         
-        self.svgImage = UIImage(named: "icon")
-        if Reachability.isConnectedToNetwork()
-        {
-            
-            let imageUrl = NSURL(string: (self.iconUrl))
-            self.svgImage = SVGKImage(contentsOf: imageUrl as URL!).uiImage
-
-        }
-        
         return self.svgImage!
-       
+        
     }
     
     

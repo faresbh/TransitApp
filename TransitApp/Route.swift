@@ -60,7 +60,7 @@ public class Route: NSObject {
         return nil
     }
     
-
+    
     
     func getProperties()->NSDictionary?{
         if self.properties == nil {
@@ -91,7 +91,7 @@ public class Route: NSObject {
         return elementProperties
     }
     
-
+    
     
     func getStartPoint()->CLLocationCoordinate2D?{
         return self.segments.first?.getStartPoint()

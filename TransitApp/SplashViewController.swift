@@ -17,7 +17,7 @@ class SplashViewController: UIViewController {
     var greenBarColor:UIColor!
     var window: UIWindow?
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class SplashViewController: UIViewController {
         
         // animate the spinner
         spinnerView.startAnimating()
-
+        
         
     }
     
@@ -49,7 +49,9 @@ class SplashViewController: UIViewController {
             }
             
             Results.routes = routes
-            Results.providers = providers
+            
+            // providers not used
+            //Results.providers = providers
             
             DispatchQueue.main.async {
                 
@@ -58,18 +60,13 @@ class SplashViewController: UIViewController {
             }
             
         }
-
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-       // print(routes)
-
+        // print(routes)
+        
     }
     
 }
