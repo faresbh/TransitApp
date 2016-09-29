@@ -60,26 +60,7 @@ public class Route: NSObject {
         return nil
     }
     
-    func getMoveSegment(id:Int)->Segment?{
-        let moveSegments = self.segments.filter { (segment) -> Bool in
-            segment.isInMoveSegment()
-        }
-        
-        if (id >= 0 && id < moveSegments.count){
-            return moveSegments[id]
-        }
-        return nil
-    }
-    
-    func numberOfMoveSegments()->Int{
-        var count = 0
-        for i in self.segments{
-            if i.isInMoveSegment(){
-                count += 1
-            }
-        }
-        return count
-    }
+
     
     func getProperties()->NSDictionary?{
         if self.properties == nil {
@@ -110,18 +91,7 @@ public class Route: NSObject {
         return elementProperties
     }
     
-    
-    func getTravelTime()->TimeInterval{
-        return self.getArrivelTime()!.timeIntervalSince(getStartTime()! as Date)
-    }
-    
-    func getStartTime()->NSDate?{
-        return self.segments.first?.getStartTime()
-    }
-    
-    func getArrivelTime()->NSDate?{
-        return self.segments.last?.getArrivalTime()
-    }
+
     
     func getStartPoint()->CLLocationCoordinate2D?{
         return self.segments.first?.getStartPoint()

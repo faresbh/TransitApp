@@ -20,7 +20,7 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
     @IBOutlet weak var destinationTextField: UITextField!
     @IBOutlet weak var departTextField: UITextField!
     @IBOutlet weak var dateTimeTravel: UILabel!
-    @IBOutlet weak var pinLocationImage: UIImageView!
+ 
     
     var popupDateTimePicker: PopupContainer?
     var dateTimePickerView : DialogDateTimePickerView!
@@ -38,9 +38,7 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
         originMarker.title = "Destination"
         originMarker.map = self.mapView
     
-        pinLocationImage.isUserInteractionEnabled = true
-        pinLocationImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SearchViewController.getUserLocation)))
-
+       
         destinationTextField.delegate = self
         departTextField.delegate = self
         
@@ -54,54 +52,25 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
         departTextField.isUserInteractionEnabled = false
         destinationTextField.isUserInteractionEnabled = false
         
+        //mapView.settings.myLocationButton = true
+        
         self.drawIterinaire(addressDep: departTextField.text!, addressDes: destinationTextField.text!)
 
- }
-
-    func getUserLocation()
-    {
-
-        // set location manager delegate
-        self.locationManager.delegate = self
-        
-        // set location accuracy
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        
-        // request location access permision from user.
-        self.locationManager.requestWhenInUseAuthorization()
-        
-        if pinLocationImage.image == UIImage(named: "location-pin")
-            
-        {
-            pinLocationImage.image = UIImage(named: "location-pin-blue")
-            self.mapView.isMyLocationEnabled = true
-            self.mapView.animate(toZoom: 10)
-
-        }
-        else
-        {
-             self.mapView.isMyLocationEnabled = false
-             pinLocationImage.image = UIImage(named: "location-pin")
-        }
-        
+    
     }
+
+    
     
     func openDatetimePickerDialog()
     {
         
         dateTimePickerView = Bundle.main.loadNibNamed("DialogDateTimePicker", owner: nil, options: nil)?[0] as! DialogDateTimePickerView
-        
         self.popupDateTimePicker = PopupContainer.generatePopupWithView(dateTimePickerView )
-        
-      
         let today = NSDate()
         dateTimePickerView.dateTimePicker.date = today as Date
         dateTimePickerView.dateTimePicker.addTarget(self, action: #selector(SearchViewController.dateTimePickerChanged), for: UIControlEvents.valueChanged)
-
-
         self.popupDateTimePicker?.show()
 
-        
     }
     
     func dateTimePickerChanged()
@@ -142,6 +111,18 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
         polyline.map = mapView
         
         self.centerMapCamera(departure: departure, destination: destination, offset: true)
+
+        let markerDep = GMSMarker()
+        markerDep.position = self.departureLatLng
+        markerDep.title = "Departure"
+        markerDep.map = self.mapView
+        
+
+        let markerDes = GMSMarker()
+        markerDes.position = self.destinationLatLng
+        markerDes.title = "Destination"
+        markerDes.map = self.mapView
+
     }
   
     
@@ -157,6 +138,7 @@ class SearchViewController: UIViewController , CLLocationManagerDelegate , UITex
             if let placemark = placemarks?.first {
                 let coordinates:CLLocationCoordinate2D = placemark.location!.coordinate
                 self.departureLatLng = coordinates
+                
                 
                 geocoder.geocodeAddressString(addressDes, completionHandler: {(placemarks, error) -> Void in
                     if((error) != nil){

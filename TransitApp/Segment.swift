@@ -22,13 +22,11 @@ public class Segment: NSObject {
     let numStops:Int
     let travelMode:Mode
     let segmentDescription: String?
-    
-    
     let iconUrl:String
     let polyline:String?
     var svgImage : UIImage?
-    private var stops:[Stop] = []
-    
+    let stops:[Stop]!
+  
     init(dataDictionary:[String: AnyObject]){
         self.name = dataDictionary["name"] as? String
         self.numStops = dataDictionary["num_stops"] as! Int
@@ -41,13 +39,8 @@ public class Segment: NSObject {
         
         self.svgImage = UIImage(named: "icon")
         
-        if Reachability.isConnectedToNetwork()
-        {
-               let imageUrl = NSURL(string: (self.iconUrl))
-                self.svgImage = SVGKImage(contentsOf: imageUrl as URL!).uiImage
-
-            
-        }
+        stops = [Stop]()
+        
         if let stopDictionary = dataDictionary["stops"]{
             for stop in stopDictionary.allObjects{
                 let stopPoint = Stop(dataDictionary: stop as! [String : AnyObject])
@@ -56,22 +49,22 @@ public class Segment: NSObject {
         }
     }
     
-    func isInMoveSegment()->Bool{
+    func getSvgImage() -> UIImage
+    {
         
-        
-        if self.travelMode.hashValue > 4{
-            return false
+        self.svgImage = UIImage(named: "icon")
+        if Reachability.isConnectedToNetwork()
+        {
+            
+            let imageUrl = NSURL(string: (self.iconUrl))
+            self.svgImage = SVGKImage(contentsOf: imageUrl as URL!).uiImage
+
         }
-        return true
+        
+        return self.svgImage!
+       
     }
     
-    func getStartTime()->NSDate?{
-        return self.stops.first?.datetime
-    }
-    
-    func getArrivalTime()->NSDate?{
-        return self.stops.last?.datetime
-    }
     
     func getStartPoint()->CLLocationCoordinate2D?{
         return self.stops.first?.location

@@ -13,9 +13,7 @@ class ResultTableViewController: UITableViewController , UIGestureRecognizerDele
     
       var routes:[Route]?
       var providers:[ProviderAttribute]?
-    
-      var selectedSectionIndex : Int = 0
-      var selectedRoute : Route!
+      var selectedSegment : Segment!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,18 +58,9 @@ class ResultTableViewController: UITableViewController , UIGestureRecognizerDele
         
         // retrieve the route cell
         let cell:RouteTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellRoute") as! RouteTableViewCell
-        
-        
         cell.typeRoute.text = routes?[section].type.getName()
         cell.providerRoute.text = routes?[section].provider
         cell.priceRoute.text = routes?[section].getPrice()
-        
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didSelectHeader))
-        tapRecognizer.delegate = self
-        tapRecognizer.numberOfTapsRequired = 1
-        tapRecognizer.numberOfTouchesRequired = 1
-        
-        cell.addGestureRecognizer(tapRecognizer)
         
         
         return cell
@@ -88,13 +77,18 @@ class ResultTableViewController: UITableViewController , UIGestureRecognizerDele
         let cell:SegmentsTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellSegment") as! SegmentsTableViewCell
         
         let segment = routes?[indexPath.section].segments[indexPath.row]
+        
         cell.nameSegment.text = segment?.name
         cell.descriptionSegment.text = segment?.segmentDescription
         cell.travelModeSegment.text = segment?.travelMode.rawValue
         cell.numStopsSegment.text = "Num Stop : "+String(describing: segment!.numStops)
         
-        cell.imageSegment.image = (segment?.svgImage)!
-    
+        
+          cell.imageSegment.image = (segment?.getSvgImage())!
+            
+        
+
+       
         
         return cell
     }
@@ -102,15 +96,8 @@ class ResultTableViewController: UITableViewController , UIGestureRecognizerDele
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        selectedSectionIndex = indexPath.section
-    }
-    
-    func didSelectHeader()
-    {
-        
-        selectedRoute = routes?[selectedSectionIndex]
-        self.performSegue(withIdentifier: "from_results_to_detail", sender: nil)
-
+        selectedSegment = routes?[indexPath.section].segments[indexPath.row]
+         self.performSegue(withIdentifier: "from_results_to_detail", sender: nil)
     }
     
     
@@ -122,7 +109,7 @@ class ResultTableViewController: UITableViewController , UIGestureRecognizerDele
             if let destinationVC = segue.destination as? DetailSegmentTableViewController
                 
             {
-                destinationVC.currentRoute = selectedRoute
+                destinationVC.currentSegment = selectedSegment
             }
             
         }

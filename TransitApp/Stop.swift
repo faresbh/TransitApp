@@ -11,9 +11,9 @@ import CoreLocation
 
 public class Stop: NSObject {
     
-    let location:CLLocationCoordinate2D?
-    let datetime:NSDate?
-    private let name:String?
+    var location:CLLocationCoordinate2D!
+    var datetime:NSDate!
+    var name:String!
     
     init(dataDictionary:[String: AnyObject]){
         
@@ -27,6 +27,11 @@ public class Stop: NSObject {
         
         let stopString = dataDictionary["name"] as? String
         self.name = stopString
+    }
+    
+     override init()
+    {
+        
     }
 }
 

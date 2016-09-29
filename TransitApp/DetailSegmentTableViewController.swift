@@ -12,60 +12,100 @@ import GoogleMaps
 class DetailSegmentTableViewController: UITableViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
-    var currentRoute : Route!
-    
+    var currentSegment : Segment!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        self.configureMap()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // retrieve the segment cell
+        let cell:StopTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellStop") as! StopTableViewCell
+        let stop = currentSegment.stops[indexPath.row]
+        
+        cell.nameStop.text = stop.name
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "mm.dd.yyy hh:mm a"
+        
+        let stopDateTime = formatter.string(from: stop.datetime as Date)
+
+        cell.dateStop.text = stopDateTime
+
+        
+        return cell
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return self.currentSegment.stops.count
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        
+        //showing no data label when empty stops
+        var numOfSections: Int = 0
+        if (currentSegment.stops.count) > 0
+        {
+            tableView.separatorStyle = .singleLine
+            numOfSections        = 1
+            tableView.backgroundView = nil
+        }
+        else
+        {
+            let noDataLabel: UILabel     = UILabel(frame: CGRectMake(0, 0, tableView.bounds.size.width, tableView.bounds.size.height))
+            noDataLabel.text             = "No data available"
+            noDataLabel.textColor        = UIColor.black
+            noDataLabel.textAlignment    = .center
+            tableView.backgroundView = noDataLabel
+            tableView.separatorStyle = .none
+        }
+        return numOfSections
+        
+    }
+    
+
+    
+   
+    private func addMarker(name:String,position:CLLocationCoordinate2D, color:UIColor){
+        
+        let marker = GMSMarker()
+        marker.icon = GMSMarker.markerImage(with: color)
+        marker.position = position
+        marker.title = name
+        marker.map = self.mapView
+    }
+    
+    
+    
+    func configureMap(){
+        self.mapView.camera = GMSCameraPosition.camera(withLatitude: self.currentSegment!.getStartPoint()!.latitude, longitude: self.currentSegment!.getStartPoint()!.longitude, zoom: 12)
+        
+        // Add markers on map
+        self.addMarker(name: "Origin", position: self.currentSegment!.getStartPoint()!, color: UIColor.blue)
+        self.addMarker(name: "Destination", position: self.currentSegment!.getDestinationPoint()!, color: UIColor.blue)
+        
+       
+
+            
+            if let polylineString = currentSegment.polyline {
+                let polylinePath = GMSPath(fromEncodedPath: polylineString)
+                let polyline = GMSPolyline(path: polylinePath)
+                polyline.map = mapView
+                polyline.strokeColor = UIColor.blue
+            }
+        
     }
 
-//    func loadMapInfo(){
-//        self.mapView.camera = GMSCameraPosition.cameraWithLatitude(self.route!.getStartPoint()!.latitude, longitude: self.route!.getStartPoint()!.longitude, zoom: 12)
-//        
-//        // Put markers on map
-//        
-//        self.placePin("Origin", position: self.route!.getStartPoint()!, color: UIColor.grayColor())
-//        self.placePin("Destination", position: self.route!.getDestinationPoint()!, color: UIColor.blueColor())
-//        
-//       
-//        for segment in route!.segments{
-//            
-//            //place a pin if is a "move" segment
-//            if segment.isMoveSegment(){
-//                self.placePin(segment.name ?? segment.travelMode.rawValue.capitalizedString, position: segment.getStartPoint()!, color: UIColor.redColor())
-//            }
-//            
-//            if let polylineString = segment.polyline {
-//                let polylinePath = GMSPath(fromEncodedPath: polylineString)
-//                let polyline = GMSPolyline(path: polylinePath)
-//                polyline.map = mapView
-//                polyline.strokeColor = UIColor.blueColor()
-//            }
-//        }
-//    }
-//
-//
 }
